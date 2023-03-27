@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fafafc;
+}
+
+.nav {
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fafafc;
+}
+
+li {
+  list-style-type: none;
+  padding: 1vh;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #a30cfd;
+  color: #fafafc;
+}
