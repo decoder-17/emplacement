@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 2vh 0 2vh 0;
+  padding: 5vh 0 5vh 0;
 }
 
 .tagline {
@@ -36,7 +36,7 @@
 }
 
 .image {
-  padding: 1vw;
+  padding: 5vh 0 5vh 0;
 }
 
 .heroimg {
@@ -58,7 +58,7 @@
   justify-content: center;
   align-items: center;
   color: #fafafc;
-  padding: 1vh 3vh 1vh 3vh;
+  padding: 1vh 3.5vh 1vh 3.5vh;
   border-radius: 10vh;
   cursor: pointer;
 }
