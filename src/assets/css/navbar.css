@@ -3,16 +3,18 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid #161417;
+  padding: 1vh;
 }
 
-.logo {
+.brand {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fafafc;
 }
 
-.nav {
+.brandname {
+  color: #fafafc;
 }
 
 ul {
@@ -25,13 +27,26 @@ ul {
 
 li {
   list-style-type: none;
-  padding: 1vh;
+  padding: 2vh;
+  font-family: "Inter", sans-serif;
 }
 
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #a30cfd;
+  background: rgb(61, 35, 140);
+  background: linear-gradient(
+    90deg,
+    rgba(61, 35, 140, 1) 0%,
+    rgba(139, 60, 197, 1) 100%
+  );
+  border: none;
   color: #fafafc;
+  padding: 1vh 2.5vh 1vh 2.5vh;
+  border-radius: 10vh;
+}
+
+.button:hover {
+  cursor: pointer;
 }

@@ -1,0 +1,83 @@
+.body {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 5vh 0 5vh 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2vh 0 2vh 0;
+}
+
+.tagline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a30cfd;
+  font-family: "Krona One", sans-serif;
+  font-size: 6vh;
+  padding: 2vh 0 2vh 0;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  color: #fafafc;
+  padding: 2vh 0 2vh 0;
+  margin: 0 10vh 0 0;
+  font-family: "Inter", sans-serif;
+}
+
+.image {
+  padding: 1vw;
+}
+
+.heroimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36vh;
+}
+
+.buttonlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.herobutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fafafc;
+  padding: 1vh 3vh 1vh 3vh;
+  border-radius: 10vh;
+  cursor: pointer;
+}
+
+.join {
+  background: rgb(61, 35, 140);
+  background: linear-gradient(
+    90deg,
+    rgba(61, 35, 140, 1) 0%,
+    rgba(139, 60, 197, 1) 100%
+  );
+  border: none;
+  margin: 2vh;
+}
+
+.learn {
+  background: linear-gradient(#08000d, #08000d) padding-box,
+    linear-gradient(90deg, rgba(61, 35, 140, 1) 0%, rgba(139, 60, 197, 1) 100%)
+      border-box;
+  border: 2px solid transparent;
+  margin: 2vh;
+}

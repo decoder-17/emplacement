@@ -1,10 +1,13 @@
 import React from "react";
-import './css/navbar.css'
+import '../../assets/css/navbar.css'
 
 export const Navbar = () => {
   return (
     <div className="navbar">
-      <div className="logo">bleh</div>
+      <div className="brand">
+        <div className="logo"></div>
+        <div className="brandname">emplacement</div>
+      </div>
       <div className="nav">
         <ul>
           <li>Home</li>
