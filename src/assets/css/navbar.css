@@ -31,6 +31,11 @@ li {
   font-family: "Inter", sans-serif;
 }
 
+li:hover {
+  cursor: pointer;
+  color: #a30cfd;
+}
+
 .button {
   display: flex;
   justify-content: center;
