@@ -1,5 +1,5 @@
 # emplacement
-Discover new opportunities.
+## Discover new opportunities.
 Welcome to Emplacement, the ultimate job search platform that helps you find the perfect job that matches your skills, experience, and preferences. Our mission is to connect job seekers with the best employment opportunities available, and make the job search process more efficient and stress-free.
 
 Emplacement is designed to simplify the job search process by allowing you to create a job seeker profile, which includes your work experience, education, and job preferences. With this information, we can match you with jobs that fit your qualifications and expectations.
