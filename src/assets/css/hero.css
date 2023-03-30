@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600&family=Krona+One&display=swap");
+
+.brand {
+  display: inline;
+  color: #a30cfd;
+}
+
 .body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 5vh 0 5vh 0;
+  margin: 6vh 0 6vh 0;
 }
 
 .text {
@@ -11,7 +18,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 5vh 0 5vh 0;
+  margin: 5vh 0 5vh 0;
 }
 
 .tagline {
@@ -26,24 +33,29 @@
 
 .details {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: justify;
-  color: #fafafc;
+  color: #c0bdc1;
+  font-size: 0.9em;
   padding: 2vh 0 2vh 0;
   margin: 0 10vh 0 0;
   font-family: "Inter", sans-serif;
+  font-weight: lighter;
+}
+
+.details > p {
+  margin: 1vh;
 }
 
 .image {
-  padding: 5vh 0 5vh 0;
+  margin: 5vh 0 5vh 0;
 }
 
 .heroimg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 36vh;
+  /* box-shadow: 10px 5px 5px #a30cfd; */
 }
 
 .buttonlist {
@@ -57,7 +69,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fafafc;
+  color: #c0bdc1;
   padding: 1vh 3.5vh 1vh 3.5vh;
   border-radius: 10vh;
   cursor: pointer;
@@ -80,4 +92,10 @@
       border-box;
   border: 2px solid transparent;
   margin: 2vh;
+  color: #c0bdc1;
+}
+
+.join:hover,
+.learn:hover {
+  color: #fafafc;
 }

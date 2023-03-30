@@ -1,12 +1,16 @@
 import React from "react";
 import '../../assets/css/navbar.css'
+import logo from '../../assets/images/logo.png'
 
 export const Navbar = () => {
   return (
     <div className="navbar">
       <div className="brand">
-        <div className="logo"></div>
-        <div className="brandname">emplacement</div>
+        <div className="logospace">
+          <img src={logo} alt="logo" className="logo" />
+          <div className="brandname">emplacement</div>
+        </div>
+
       </div>
       <div className="nav">
         <ul>
