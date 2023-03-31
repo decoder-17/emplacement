@@ -5,6 +5,7 @@ export default function Auth() {
     <div>
       <input type='text' placeholder='Email goes here' />
       <inupt type='password' placeholder='Enter your password' />
+      <button type='submit'>Sing In</button>
     </div>
   )
 }
