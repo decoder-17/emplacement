@@ -6,7 +6,6 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Introduction from './components/sections/Introduction'
 function App() {
-
   return (
     <div className="App">
       <Navbar />
