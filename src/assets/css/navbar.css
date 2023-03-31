@@ -43,6 +43,7 @@ li {
   list-style-type: none;
   padding: 2vh;
   font-family: "Inter", sans-serif;
+  font-weight: bold;
 }
 
 li:hover {
@@ -65,7 +66,7 @@ li:hover {
   padding: 1vh 4vh 1vh 4vh;
   border-radius: 10vh;
   font-size: 1em;
-  font-weight: lighter;
+  font-weight: bold;
 }
 
 .button:hover {
