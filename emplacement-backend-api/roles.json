@@ -1,0 +1,310 @@
+{
+  "success": true,
+  "data": [
+    {
+      "_id": "6135c025df4eadc1bd885be8",
+      "name": "Backend Developer",
+      "type": 1
+    },
+    {
+      "_id": "61b42ee803a75d6a2318c430",
+      "name": "Big Data Engineer",
+      "type": 1
+    },
+    {
+      "_id": "61b42ee803a75d6a2318c431",
+      "name": "Blockchain Developer",
+      "type": 1
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb2f",
+      "name": "Brand Specialist",
+      "type": 2
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb29",
+      "name": "Business Analyst",
+      "type": 2
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb28",
+      "name": "Business Development",
+      "type": 2
+    },
+    {
+      "_id": "6135c025df4eadc1bd885bf2",
+      "name": "Cloud Engineer",
+      "type": 1
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb35",
+      "name": "Community Management",
+      "type": 2
+    },
+    {
+      "_id": "61dd7970746692cd07008b5a",
+      "name": "Content Analyst",
+      "type": 2
+    },
+    {
+      "_id": "62c68c38e9536402bb1e51c6",
+      "name": "Content Writer",
+      "type": 2
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb2d",
+      "name": "Customer success",
+      "type": 2
+    },
+    {
+      "_id": "61b42ee803a75d6a2318c432",
+      "name": "Data Analyst",
+      "type": 1
+    },
+    {
+      "_id": "6135c025df4eadc1bd885bed",
+      "name": "Data Engineer",
+      "type": 1
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb39",
+      "name": "Data Entry",
+      "type": 2
+    },
+    {
+      "_id": "61407420fa3066fe2a9662b8",
+      "name": "Data Science",
+      "type": 1
+    },
+    {
+      "_id": "6135c025df4eadc1bd885bef",
+      "name": "DevOps Engineer",
+      "type": 1
+    },
+    {
+      "_id": "631a363ff10d05e0801ecf4f",
+      "name": "Developer Advocate (DevRel)",
+      "type": 2
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb22",
+      "name": "Digital Marketing",
+      "type": 2
+    },
+    {
+      "_id": "61b42ee803a75d6a2318c433",
+      "name": "Embedded Software Engineer",
+      "type": 1
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb3a",
+      "name": "Fashion Design",
+      "type": 2
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb27",
+      "name": "Finance",
+      "type": 2
+    },
+    {
+      "_id": "62c68c56e9536402bb1e51c7",
+      "name": "Founder's office",
+      "type": 2
+    },
+    {
+      "_id": "6135c025df4eadc1bd885be7",
+      "name": "Frontend Developer",
+      "type": 1
+    },
+    {
+      "_id": "6135c025df4eadc1bd885be9",
+      "name": "Fullstack Developer",
+      "type": 1
+    },
+    {
+      "_id": "6135c025df4eadc1bd885bf3",
+      "name": "Game Developer",
+      "type": 1
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb21",
+      "name": "Graphic Design",
+      "type": 2
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb37",
+      "name": "Growth",
+      "type": 2
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb23",
+      "name": "Human Resources (HR)",
+      "type": 2
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb38",
+      "name": "Law",
+      "type": 2
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb33",
+      "name": "Legal Consultant",
+      "type": 2
+    },
+    {
+      "_id": "6135c025df4eadc1bd885bf0",
+      "name": "MLOps Engineer",
+      "type": 1
+    },
+    {
+      "_id": "6135c025df4eadc1bd885bec",
+      "name": "Machine Learning Engineer",
+      "type": 1
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb32",
+      "name": "Management Consultant",
+      "type": 2
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb2c",
+      "name": "Market/Business Research",
+      "type": 2
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb24",
+      "name": "Marketing",
+      "type": 2
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb2b",
+      "name": "Marketing/Sales",
+      "type": 2
+    },
+    {
+      "_id": "6135c025df4eadc1bd885beb",
+      "name": "Mobile App Developer",
+      "type": 1
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb25",
+      "name": "NGO",
+      "type": 2
+    },
+    {
+      "_id": "61b42ee803a75d6a2318c434",
+      "name": "Network Engineer",
+      "type": 1
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb34",
+      "name": "Operations",
+      "type": 2
+    },
+    {
+      "_id": "6154499ae2985fba7ba7e664",
+      "name": "Product Management",
+      "type": 2
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb36",
+      "name": "Product Operations",
+      "type": 2
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb2a",
+      "name": "Product marketing",
+      "type": 2
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb2e",
+      "name": "Public Relations (PR)",
+      "type": 2
+    },
+    {
+      "_id": "6135c025df4eadc1bd885bee",
+      "name": "QA Engineer",
+      "type": 1
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb30",
+      "name": "Social Media Marketing",
+      "type": 2
+    },
+    {
+      "_id": "6135c025df4eadc1bd885bea",
+      "name": "Software Developer",
+      "type": 1
+    },
+    {
+      "_id": "62221445fccf21cb6c477fed",
+      "name": "Software Development Engineer in Test (SDET)",
+      "type": 1
+    },
+    {
+      "_id": "63a160827433392bace50a19",
+      "name": "Solution Analyst",
+      "type": 2
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb3c",
+      "name": "Strategy",
+      "type": 2
+    },
+    {
+      "_id": "61dd7970746692cd07008b5b",
+      "name": "Subject Matter Expert (SME)",
+      "type": 2
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb3d",
+      "name": "Supply Chain Management (SCM)",
+      "type": 2
+    },
+    {
+      "_id": "61dd7970746692cd07008b59",
+      "name": "Technical Content Engineer",
+      "type": 1
+    },
+    {
+      "_id": "623ebd7d1b0564483ab43729",
+      "name": "Technical Operations",
+      "type": 1
+    },
+    {
+      "_id": "6140740efa3066fe2a9662b7",
+      "name": "Technical Product Manager",
+      "type": 1
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb31",
+      "name": "Technical Writer",
+      "type": 2
+    },
+    {
+      "_id": "6135c025df4eadc1bd885bf1",
+      "name": "Testing Engineer",
+      "type": 1
+    },
+    {
+      "_id": "61b42ee803a75d6a2318c435",
+      "name": "UI/UX Designer",
+      "type": 1
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb3e",
+      "name": "Video/Graphics Editing",
+      "type": 2
+    },
+    {
+      "_id": "629b257cf5543ba0b054eb26",
+      "name": "Volunteer",
+      "type": 2
+    },
+    {
+      "_id": "61dd7970746692cd07008b5c",
+      "name": "Wordpress Developer",
+      "type": 1
+    }
+  ]
+}
