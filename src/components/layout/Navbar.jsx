@@ -15,6 +15,7 @@ export const Navbar = () => {
       <div className="nav">
         <ul>
           <li>Home</li>
+          <li>Telegram</li>
           <li>About Us</li>
           <li>Contact Us</li>
         </ul>
