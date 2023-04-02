@@ -9,12 +9,6 @@
   font-weight: lighter;
 }
 
-.brand {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .brandname {
   color: #c0bdc1;
 }
@@ -46,9 +40,15 @@ li {
   font-weight: bold;
 }
 
-li:hover {
+li:hover,
+a:hover {
   cursor: pointer;
   color: #a30cfd;
+}
+
+a {
+  text-decoration: none;
+  color: #c0bdc1;
 }
 
 .button {
