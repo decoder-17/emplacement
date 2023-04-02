@@ -9,7 +9,7 @@ export const Hero = () => {
         <div className='tagline'>Discover New Opportunities</div>
         <div className='details'>
           <p>
-            Unemployment has a solution and that is emplacement. Your placement cell may restrain your potential but we won't. The ultimate job search platform that helps you find the perfect job that matches your skills, experience, and preferences.
+            Emplacement is the ultimate job search platform that helps you find the perfect job that matches your skills, experience, and preferences.
             Our mission is to connect job seekers with the best employment opportunities available, and make the job search process more efficient and stress-free.</p>
 
           <p>

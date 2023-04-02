@@ -3,6 +3,7 @@
 .brand {
   display: inline;
   color: #a30cfd;
+  font-weight: bold;
 }
 
 .body {
@@ -34,13 +35,13 @@
 .details {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   text-align: justify;
   color: #c0bdc1;
-  font-size: 0.9em;
+  font-size: 1.7vh;
   padding: 2vh 0 2vh 0;
-  margin: 0 10vh 0 0;
+  margin: 0 20vh 0 0;
   font-family: "Inter", sans-serif;
   font-weight: lighter;
 }

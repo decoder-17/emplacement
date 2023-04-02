@@ -1,0 +1,91 @@
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 2vh;
+  z-index: 999;
+  background-color: #2e1c47;
+  border-radius: 2vh;
+  /* display: none; */
+}
+
+.close {
+  display: flex;
+  justify-content: end;
+  align-self: flex-end;
+  background-color: #2e1c47;
+}
+
+.closebtn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: larger;
+}
+
+.closebtn:hover {
+  cursor: pointer;
+  color: #dc3545;
+}
+
+.pophead,
+.popbody {
+  color: #fff;
+  background-color: #2e1c47;
+}
+
+.pophead {
+  font-weight: bold;
+  display: flex;
+  justify-self: start;
+  align-items: start;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.popbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.buttonarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #2e1c47;
+}
+
+.popbutton {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #28a8e9;
+  border: none;
+  color: #ffffff;
+  padding: 1vh 3vh 1vh 3vh;
+  border-radius: 10vh;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.popbutton:hover {
+  cursor: pointer;
+}
+
+.popuplogo {
+  height: 4vh;
+  width: auto;
+  margin: 0vh 0vh 0vh 0.9vh;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 2px solid white;
+}

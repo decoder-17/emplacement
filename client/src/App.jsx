@@ -7,12 +7,14 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Telegram from './pages/Telegram'
 import Jobs from './pages/Jobs'
+import TelegramPopup from './components/TelegramPopup'
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Navbar />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Telegram" element={<Telegram />} />
@@ -20,6 +22,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
+        <TelegramPopup />
       </Router>
     </div>
   )
