@@ -11,7 +11,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 6vh 0 6vh 0;
+  margin: 10vh 0 0vh 0;
 }
 
 .text {
@@ -64,6 +64,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-self: center;
+  margin: 0 20vh 0 0;
 }
 
 .herobutton {
