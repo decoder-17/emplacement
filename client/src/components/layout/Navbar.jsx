@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet, Link } from 'react-router-dom'
 import '../../assets/css/navbar.css'
 import logo from '../../assets/images/logo.png'
 
@@ -14,10 +15,11 @@ export const Navbar = () => {
       </div>
       <div className="nav">
         <ul>
-          <li>Home</li>
-          <li>Telegram</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
+          <li> <Link to={`/`}>Home</Link> </li>
+          <li><Link to={'/Jobs'}>Jobs</Link></li>
+          <li> <Link to={`/Telegram`}>Telegram</Link></li>
+          <li><Link to={`/About`}>About Us</Link></li>
+          <li><Link to={`/Contact`}>Contact Us</Link></li>
         </ul>
       </div>
       <div className="sigin">
