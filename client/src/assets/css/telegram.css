@@ -1,0 +1,25 @@
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a30cfd;
+  font-family: "Krona One", sans-serif;
+  font-size: 2em;
+  padding: 2vh 0 2vh 0;
+}
+
+.body {
+  color: #c0bdc1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Krona One", sans-serif;
+  font-size: 1em;
+  padding: 2vh 0 2vh 0;
+}
+
+.telegrambtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
