@@ -11,7 +11,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 6vh 0 6vh 0;
+  margin: 8vh 0 0vh 0;
 }
 
 .text {
@@ -28,7 +28,7 @@
   align-items: center;
   color: #a30cfd;
   font-family: "Krona One", sans-serif;
-  font-size: 6vh;
+  font-size: 3.5em;
   padding: 2vh 0 2vh 0;
 }
 
@@ -39,7 +39,7 @@
   align-items: flex-start;
   text-align: justify;
   color: #c0bdc1;
-  font-size: 1.7vh;
+  font-size: 1.2em;
   padding: 2vh 0 2vh 0;
   margin: 0 20vh 0 0;
   font-family: "Inter", sans-serif;
@@ -47,7 +47,7 @@
 }
 
 .details > p {
-  margin: 1vh;
+  margin: 0.5em;
 }
 
 .image {
@@ -64,6 +64,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-self: center;
+  margin: 0 20vh 0 0;
 }
 
 .herobutton {
