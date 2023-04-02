@@ -1,0 +1,39 @@
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.job-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c0bdc1;
+  padding: 1vh 3.5vh 1vh 3.5vh;
+  border-radius: 10vh;
+  cursor: pointer;
+}
+
+.recent {
+  background: rgb(61, 35, 140);
+  background: linear-gradient(
+    90deg,
+    rgba(61, 35, 140, 1) 0%,
+    rgba(139, 60, 197, 1) 100%
+  );
+  border: none;
+  margin: 2vh;
+}
+
+.search {
+  background: linear-gradient(#08000d, #08000d) padding-box,
+    linear-gradient(90deg, rgba(61, 35, 140, 1) 0%, rgba(139, 60, 197, 1) 100%)
+      border-box;
+  border: 2px solid transparent;
+  margin: 2vh;
+  color: #c0bdc1;
+}
+
+.recent:hover,
+.search:hover {
+  color: #fff;
+}
