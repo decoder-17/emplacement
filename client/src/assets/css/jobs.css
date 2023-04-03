@@ -1,6 +1,12 @@
+.navigation,
 .buttons {
   display: flex;
   flex-direction: row;
+}
+
+.navigation {
+  justify-content: space-between;
+  align-items: center;
 }
 
 .job-btn {
@@ -36,4 +42,14 @@
 .recent:hover,
 .search:hover {
   color: #fff;
+}
+
+.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c0bdc1;
+  padding: 1vh 3.5vh 1vh 3.5vh;
+  border-radius: 10vh;
+  cursor: text;
 }

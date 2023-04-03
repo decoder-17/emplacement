@@ -1,0 +1,20 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5em;
+}
+
+.errorimg {
+  width: 50%;
+  height: 50%;
+  padding: 2em;
+}
+
+.errormsg {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #c0bdc1;
+  padding: 2em;
+}
