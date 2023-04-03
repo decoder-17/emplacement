@@ -55,11 +55,70 @@
 }
 
 .card {
-  background-color: #c0bdc1;
-  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh;
+  border-radius: 2vh;
 }
 
-.job-title {
+.job-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: #fff;
-  background-color: #c0bdc1;
+  background-color: #2e1c47;
+  padding: 2vh;
+  margin: 2vh;
+  border-radius: 2vh;
+  height: 36vh;
+  width: 36vh;
+}
+
+.card-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e1c47;
+}
+
+.companylogo {
+  background-color: #2e1c47;
+}
+
+.companydetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color: #fff;
+  background-color: #2e1c47;
+}
+
+.companyname {
+  background-color: #2e1c47;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+
+.companylocation {
+  background-color: #2e1c47;
+}
+
+.btnlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e1c47;
+}
+
+.button {
+  margin: 1vh;
 }

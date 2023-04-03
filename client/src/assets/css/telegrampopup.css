@@ -10,6 +10,7 @@
   z-index: 999;
   background-color: #2e1c47;
   border-radius: 2vh;
+  border: 2px solid #c0bdc1;
 }
 
 .close {
