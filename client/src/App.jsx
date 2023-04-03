@@ -7,7 +7,7 @@ import About from './pages/About'
 import Telegram from './pages/Telegram'
 import Jobs from './pages/Jobs'
 import TelegramPopup from './components/TelegramPopup'
-
+import Error from './pages/Error404'
 function App() {
   return (
     <div className="App">
@@ -19,6 +19,7 @@ function App() {
           <Route path="/Telegram" element={<Telegram />} />
           <Route path="/Jobs" element={<Jobs />} />
           <Route path="/About" element={<About />} />
+          <Route path="*" element={<Error />} />
         </Routes>
         <TelegramPopup />
       </Router>
