@@ -53,3 +53,13 @@
   border-radius: 10vh;
   cursor: text;
 }
+
+.card {
+  background-color: #c0bdc1;
+  height: auto;
+}
+
+.job-title {
+  color: #fff;
+  background-color: #c0bdc1;
+}
