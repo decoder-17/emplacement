@@ -39,12 +39,12 @@ li {
   font-weight: bold;
 }
 
-li:hover,
-a:hover {
+.navmenu:hover {
   cursor: pointer;
   color: #a30cfd;
 }
 
+.navmenu,
 a {
   text-decoration: none;
   color: #c0bdc1;

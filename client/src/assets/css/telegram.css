@@ -8,7 +8,19 @@
   padding: 2vh 0 2vh 0;
 }
 
-.body {
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh;
+}
+
+.notificationimg {
+  height: 50vh;
+  width: auto;
+}
+
+.content {
   color: #c0bdc1;
   display: flex;
   justify-content: center;

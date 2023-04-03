@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import '../../assets/css/hero.css'
 import heroimg from '../../assets/images/heroimg.svg'
 
@@ -19,8 +20,8 @@ export const Hero = () => {
 
         </div>
         <div className='buttonlist'>
-          <button className='herobutton join'>Get Placed</button>
-          <button className='herobutton learn'>Learn more</button>
+          <Link to='./Jobs' className='herobutton join'>Get Placed</Link>
+          <Link to='./About' className='herobutton learn'>Learn more</Link>
         </div>
       </div>
       <div className='image'>
