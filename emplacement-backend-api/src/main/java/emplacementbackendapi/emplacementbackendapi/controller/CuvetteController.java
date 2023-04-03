@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/api/v1/site/cuvette")
 public class CuvetteController {
     @ResponseStatus(HttpStatus.OK)

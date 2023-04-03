@@ -5,6 +5,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import emplacementbackendapi.emplacementbackendapi.model.HealthRecord;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/health")
 public class HealthController {
