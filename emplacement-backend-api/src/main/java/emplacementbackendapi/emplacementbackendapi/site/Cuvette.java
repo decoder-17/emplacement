@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 
 public class Cuvette {
 
-    private static final String TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5lZXJhamtyMTIxMEBnbWFpbC5jb20iLCJuYW1lIjoiTmVlcmFqIEt1bWFyIiwiaWQiOiI2M2I0OGFiNGY2YThlNmIzOTAzNzhmMGMiLCJ1c2VyVHlwZSI6InN0dWRlbnQiLCJpYXQiOjE2NzI3NzYzNzIsImV4cCI6MTY3MzM4MTE3Mn0.1M9SxrdT1kk3dll_CJeBap_iupnAgUdihxdeROUbz-A";
+    private static final String TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNzazcwOTEyMEBnbWFpbC5jb20iLCJuYW1lIjoiRmFpemFsIiwiaWQiOiI2NDJhZjQ2NTc2NTg4MzIwOWFiMTRiNmQiLCJ1c2VyVHlwZSI6InN0dWRlbnQiLCJpYXQiOjE2ODA1MzY2NzcsImV4cCI6MTY4MTE0MTQ3N30.jtlkgU1ryIPHKWx-xojSgGuAkUIkuAEacyEcCEQEzkw";
     private static final String USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54";
 
     public String getHomeInterShipDetails(String page) {
