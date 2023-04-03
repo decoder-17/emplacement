@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "1a957027-0fc4-459f-ae2e-b39f35e43a8f",
+		"name": "Emplacement-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25988835"
+	},
+	"item": [
+		{
+			"name": "Cuvette",
+			"item": [
+				{
+					"name": "HomePageInternShip",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/v1/site/cuvette/internships?page=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"site",
+								"cuvette",
+								"internships"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchByRole Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/v1/site/naukri/search?role_id=Backend Developer",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"site",
+								"naukri",
+								"search"
+							],
+							"query": [
+								{
+									"key": "role_id",
+									"value": "Backend Developer"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "internshipTitles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/v1/site/cuvette/internship-title",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"site",
+								"cuvette",
+								"internship-title"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "naukri",
+			"item": [
+				{
+					"name": "SearchByRole",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "appid",
+								"value": "109",
+								"type": "text"
+							},
+							{
+								"key": "systemid",
+								"value": "109",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/v1/site/naukri/search?role_id=Backend Developer&page=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"site",
+								"naukri",
+								"search"
+							],
+							"query": [
+								{
+									"key": "role_id",
+									"value": "Backend Developer"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Test",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "appid",
+						"value": "109",
+						"type": "text"
+					},
+					{
+						"key": "systemid",
+						"value": "109",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://www.naukri.com/jobapi/v3/search?noOfResults=20&urlType=search_by_keyword&searchType=adv&keyword=Backend+Developer&pageNo=1&experience=0&experience=0&src=jobsearchDesk",
+					"protocol": "https",
+					"host": [
+						"www",
+						"naukri",
+						"com"
+					],
+					"path": [
+						"jobapi",
+						"v3",
+						"search"
+					],
+					"query": [
+						{
+							"key": "noOfResults",
+							"value": "20"
+						},
+						{
+							"key": "urlType",
+							"value": "search_by_keyword"
+						},
+						{
+							"key": "searchType",
+							"value": "adv"
+						},
+						{
+							"key": "keyword",
+							"value": "Backend+Developer"
+						},
+						{
+							"key": "pageNo",
+							"value": "1"
+						},
+						{
+							"key": "experience",
+							"value": "0"
+						},
+						{
+							"key": "experience",
+							"value": "0"
+						},
+						{
+							"key": "src",
+							"value": "jobsearchDesk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HealthCheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/health",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
