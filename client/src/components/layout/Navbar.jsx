@@ -4,7 +4,7 @@ import { auth, provider } from '../../config/firebase'
 import { signInWithPopup, signOut } from 'firebase/auth'
 import { useAuthState } from "react-firebase-hooks/auth"
 import '../../assets/css/navbar.css'
-import logo from '../../assets/images/logo.png'
+import logo from '/logo.png'
 
 export const Navbar = () => {
 
@@ -29,16 +29,16 @@ export const Navbar = () => {
       <div className="brand">
         <div className="logospace">
           <img src={logo} alt="logo" className="logo" />
-          <div className="brandname">emplacement</div>
+          <div className="brandname"><Link to={`/`} >emplacement</Link></div>
         </div>
 
       </div>
       <div className="nav">
         <ul>
-          <li> <Link to={`/`}>Home</Link> </li>
-          <li><Link to={'/Jobs'}>Jobs</Link></li>
-          <li> <Link to={`/Telegram`}>Telegram</Link></li>
-          <li><Link to={`/About`}>About Us</Link></li>
+          <li> <Link to={`/`} className="navmenu">Home</Link> </li>
+          <li><Link to={'/Jobs'} className="navmenu">Jobs</Link></li>
+          <li> <Link to={`/Telegram`} className="navmenu">Telegram</Link></li>
+          <li><Link to={`/About`} className="navmenu">About Us</Link></li>
         </ul>
       </div>
       <div className="sigin">
