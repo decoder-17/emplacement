@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { MdSearch } from "react-icons/md";
 import "../assets/css/jobs.css";
 
 export default function Jobs() {
@@ -6,7 +7,7 @@ export default function Jobs() {
   const url =
     "https://backend-decoder-17.cloud.okteto.net/api/v1/site/cuvette/internships?page=1";
 
-  const fetchJobData = async () => {
+  const fetchJobDataOnLoad = async () => {
     try {
       await fetch(url)
         .then((response) => {
@@ -21,7 +22,7 @@ export default function Jobs() {
   };
 
   useEffect(() => {
-    fetchJobData();
+    fetchJobDataOnLoad();
   }, []);
 
   return (
@@ -29,15 +30,17 @@ export default function Jobs() {
       <div className="navigation">
         <div className=" buttons">
           <button className="job-btn recent">Recents</button>
-          <button className="job-btn search">Search</button>
+          <button className="job-btn search">Search  </button>
         </div>
-        <div>
+        <div className="searchArea">
+          {/* <div className="search-icon"><MdSearch /></div> */}
           <input
             type="text"
             className="search-btn search"
             placeholder="Search here..."
             autoFocus
-          />
+          ></input>
+
         </div>
       </div>
       <div className="job-list">
@@ -51,16 +54,20 @@ export default function Jobs() {
                     className="logo companylogo"
                     alt="Company Logo"
                   />
-                  <p className="companyname">
-                    {job.refUser.refCompanyProfile.companyName}
-                  </p>
+                  <div className="header">
+                    <p className="companyname">
+                      {job.refUser.refCompanyProfile.companyName}
+                    </p>
+                    <p className="job-desc">{job.refInternshipTitle.name}</p>
+                  </div>
                 </div>
                 <div className="companydetails">
-
                   <p className="companylocation">
-                    Office Location: {job.refUser.refCompanyProfile.refLocation.state}
+                    Office Location :
+                    {job.refUser.refCompanyProfile.refLocation.state}
                   </p>
-                  <p className="timeperiod">Time period: {job.duration}</p>
+                  <p className="timeperiod">Time period : {job.duration}</p>
+                  <p> {job.stipendRange}</p>
                 </div>
                 <div className="btnlist">
                   <button className="button view">View More</button>
