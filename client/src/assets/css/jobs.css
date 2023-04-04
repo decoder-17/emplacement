@@ -1,3 +1,6 @@
+.jobs {
+  min-height: 83.5vh;
+}
 .navigation,
 .buttons {
   display: flex;

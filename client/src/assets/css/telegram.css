@@ -1,3 +1,6 @@
+.telegram {
+  min-height: 83.5vh;
+}
 .heading {
   display: flex;
   justify-content: center;
