@@ -20,8 +20,8 @@ export const Hero = () => {
 
         </div>
         <div className='buttonlist'>
-          <Link to='./Jobs' className='herobutton join'>Get Placed</Link>
-          <Link to='./About' className='herobutton learn'>Learn more</Link>
+          <Link to='./Jobs' className='secondary-btn apply'>Get Placed</Link>
+          <Link to='./About' className='secondary-btn more'>Learn more</Link>
         </div>
       </div>
       <div className='image'>
