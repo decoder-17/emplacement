@@ -5,7 +5,7 @@ import "../assets/css/jobs.css";
 export default function Jobs() {
   const [jobs, setJobs] = useState([]);
   const url =
-    "https://backend-decoder-17.cloud.okteto.net/api/v1/site/cuvette/internships?page=1";
+    "https://backend-decoder-17.cloud.okteto.net/api/v1/site/cuvette/internships?";
 
   const fetchJobDataOnLoad = async () => {
     try {
@@ -30,7 +30,7 @@ export default function Jobs() {
       <div className="navigation">
         <div className=" buttons">
           <button className="job-btn recent">Recents</button>
-          <button className="job-btn search">Search  </button>
+          <button className="job-btn search">Search</button>
         </div>
         <div className="searchArea">
           {/* <div className="search-icon"><MdSearch /></div> */}
@@ -62,16 +62,16 @@ export default function Jobs() {
                   </div>
                 </div>
                 <div className="companydetails">
-                  <p className="companylocation">
+                  <p className="companylocation info">
                     Office Location :
                     {job.refUser.refCompanyProfile.refLocation.state}
                   </p>
-                  <p className="timeperiod">Time period : {job.duration}</p>
-                  <p> {job.stipendRange}</p>
+                  <p className="timeperiod info">Time period : {job.duration} Months</p>
+                  <p className="stipend info"> {job.stipendRange}</p>
                 </div>
                 <div className="btnlist">
-                  <button className="button view">View More</button>
-                  <button className="button">Apply</button>
+                  <button className="secondary-btn more">View</button>
+                  <button className="secondary-btn apply">Apply</button>
                 </div>
               </div>
             ))}
