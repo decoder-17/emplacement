@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #161417;
+  border-bottom: 0.1em solid #939194;
   padding: 2vh;
 }
 

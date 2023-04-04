@@ -7,10 +7,8 @@
 }
 
 .body {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  display: grid;
+  grid-auto-flow: column;
   margin: 8vh 0 0vh 0;
 }
 
@@ -89,7 +87,7 @@
 }
 
 .learn {
-  background: linear-gradient(#08000d, #08000d) padding-box,
+  background: linear-gradient(#202528, #202528) padding-box,
     linear-gradient(90deg, rgba(61, 35, 140, 1) 0%, rgba(139, 60, 197, 1) 100%)
       border-box;
   border: 2px solid transparent;
@@ -100,4 +98,12 @@
 .join:hover,
 .learn:hover {
   color: #fafafc;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c0bdc1;
+  font-weight: bold;
 }
