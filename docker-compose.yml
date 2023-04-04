@@ -10,4 +10,4 @@ services:
   frontend:
     build: ./client
     ports:
-      - 5173:5173
+      - 8009:80
