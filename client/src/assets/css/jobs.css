@@ -67,13 +67,20 @@
   color: #c0bdc1;
 }
 
+.job-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .card {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 2vh;
   border-radius: 2vh;
 }
 
