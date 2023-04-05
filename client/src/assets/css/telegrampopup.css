@@ -6,8 +6,9 @@
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  padding: 2vh;
-  z-index: 999;
+  padding: 1.5vh;
+  z-index: 2;
+  width: 25%;
   background-color: #2e1c47;
   border-radius: 2vh;
   border: 2px solid #c0bdc1;
@@ -43,15 +44,17 @@
   display: flex;
   justify-self: start;
   align-items: start;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 0.5rem;
 }
 
 .popbody {
   display: flex;
+  width: 75%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 0.5rem;
 }
 

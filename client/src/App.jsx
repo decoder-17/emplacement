@@ -17,13 +17,13 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<><Home /> <TelegramPopup /></>} />
           <Route path="/Telegram" element={<Telegram />} />
           <Route path="/Jobs" element={<Jobs />} />
           <Route path="/About" element={<About />} />
           <Route path="*" element={<Error />} />
         </Routes>
-        <TelegramPopup />
+
         <Footer />
       </Router>
     </div>
