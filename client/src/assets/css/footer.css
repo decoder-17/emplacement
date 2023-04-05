@@ -1,0 +1,31 @@
+.prefooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 0 2vh 0;
+}
+
+.socials {
+  color: #fff;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 2vh;
+  border-top: 0.1em solid #939194;
+  min-height: 5em;
+}
+
+.footertext {
+  color: #c0bdc1;
+}

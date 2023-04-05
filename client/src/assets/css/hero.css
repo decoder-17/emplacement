@@ -99,12 +99,3 @@
   color: #fafafc;
 }
 
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #c0bdc1;
-  font-weight: bold;
-  padding: 2vh;
-  border-top: 0.1em solid #939194;
-}
