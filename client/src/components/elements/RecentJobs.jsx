@@ -32,18 +32,15 @@ export default function RecentJobs() {
   };
 
   useEffect(() => {
-    setTimeout(() => {
-      fetchJobDataOnSearch();
-    }, 2000);
+    fetchJobDataOnSearch();
   }, []);
 
   return (
     <div className="job-list">
 
       <SkeletonTheme highlightColor="#c0bdc1">
-        {isLoading ? (<CardSkeleton />
-        )
-          : jobs.data && (
+        {
+          isLoading ? (<CardSkeleton />) : jobs.data && (
             <div className="card">
               {jobs.data.map((job) => (
                 <div key={job.id} className="job-info">
