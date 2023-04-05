@@ -45,8 +45,6 @@ export default function Jobs() {
     }, 2000);
   }, []);
 
-  console.log(jobs.jobDetails);
-
   return (
     <div className="jobs">
       <div className="navigation">
@@ -92,7 +90,7 @@ export default function Jobs() {
                 </div>
                 <div className="btnlist">
                   <button className="secondary-btn more">View</button>
-                  <button className="secondary-btn apply">Apply</button>
+                  <a href={`https://www.naukri.com${job.jdURL}`} className="secondary-btn apply" target="_blank">Apply</a>
                 </div>
               </div>
             ))}
