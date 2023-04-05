@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { MdSearch } from "react-icons/md";
 import "../assets/css/jobs.css";
 import RecentJobs from "../components/elements/RecentJobs";
-import SearchJobs from "../components/elements/SearchJobs";
 
 export default function Jobs() {
 
@@ -18,13 +17,19 @@ export default function Jobs() {
   }
 
   const [jobs, setJobs] = useState([]);
+  const [errors, setError] = useState([]);
 
   const fetchJobDataOnSearch = async (e) => {
+    setError([]);
     try {
       const role = e.target.value;
       await fetch(`https://backend-decoder-17.cloud.okteto.net/api/v1/site/naukri/search?role_id=${role}`)
         .then((response) => {
-          return response.json();
+          if (response.ok) {
+            return response.json();
+          } else {
+            throw new Error("Something went wrong.");
+          }
         })
         .then((data) => {
           setJobs(data);
@@ -35,9 +40,12 @@ export default function Jobs() {
   };
 
   useEffect(() => {
-    fetchJobDataOnSearch();
+    setTimeout(() => {
+      fetchJobDataOnSearch();
+    }, 2000);
   }, []);
 
+  console.log(jobs.jobDetails);
 
   return (
     <div className="jobs">
@@ -56,7 +64,41 @@ export default function Jobs() {
         </div>}
       </div>
       {recent && <RecentJobs />}
-      {search && <SearchJobs />}
+      {search && <div className="job-list">
+        {jobs.jobDetails && (
+          <div className="card">
+            {jobs.jobDetails.map((job) => (
+              <div key={job.id} className="job-info">
+                <div className="card-heading">
+                  <img
+                    src={""}
+                    className="logo companylogo"
+                    alt="Company Logo"
+                  />
+                  <div className="header">
+                    <p className="companyname">
+                      {job.companyName}
+                    </p>
+                    <p className="job-desc">{job.title}</p>
+                  </div>
+                </div>
+                <div className="companydetails">
+                  <p className="companylocation info">
+                    Office Location :
+
+                  </p>
+                  <p className="timeperiod info">Time period :  Months</p>
+                  <p className="stipend info"> </p>
+                </div>
+                <div className="btnlist">
+                  <button className="secondary-btn more">View</button>
+                  <button className="secondary-btn apply">Apply</button>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>}
     </div>
   );
 }
