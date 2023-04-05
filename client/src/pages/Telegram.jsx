@@ -18,7 +18,7 @@ export default function Telegram() {
 
       <div className='telegrambtn'>
         <button className="popbutton">
-          Telegram<img src={telegram} className='popuplogo' /></button>
+          Telegram<img src={telegram} className='popuplogo' alt="telegram" /></button>
       </div>
     </div>
   )

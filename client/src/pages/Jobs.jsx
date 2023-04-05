@@ -38,7 +38,6 @@ export default function Jobs() {
     fetchJobDataOnSearch();
   }, []);
 
-  console.log(jobs);
 
   return (
     <div className="jobs">
