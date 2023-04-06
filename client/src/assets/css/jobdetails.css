@@ -1,0 +1,17 @@
+.popup {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 1.5vh;
+  z-index: 2;
+  width: 25%;
+  background-color: #2e1c47;
+  border-radius: 2vh;
+  border: 2px solid #c0bdc1;
+}
