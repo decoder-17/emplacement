@@ -1,79 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600&family=Krona+One&display=swap");
 
 .brand {
-  display: inline;
   color: #a30cfd;
   font-weight: bold;
 }
 
-.body {
-  display: grid;
-  grid-auto-flow: column;
-  margin: 8vh 0 0vh 0;
-}
-
-.text {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 5vh 0 5vh 0;
-}
-
 .tagline {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #a30cfd;
   font-family: "Krona One", sans-serif;
-  font-size: 3.5em;
-  padding: 2vh 0 2vh 0;
 }
 
 .details {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  text-align: justify;
   color: #c0bdc1;
   font-size: 1.2em;
-  padding: 2vh 0 2vh 0;
-  margin: 0 20vh 0 0;
   font-family: "Inter", sans-serif;
   font-weight: lighter;
 }
 
-.details > p {
-  margin: 0.5em;
-}
-
-.image {
-  margin: 10vh 0 10vh 0;
-}
-
-.heroimg {
-  height: 36vh;
-  /* box-shadow: 10px 5px 5px #a30cfd; */
-}
-
-.buttonlist {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-self: center;
-  margin: 0 20vh 0 0;
-}
-
 .secondary-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #c0bdc1;
-  padding: 1vh 3.5vh 1vh 3.5vh;
-  border-radius: 10vh;
+  border-radius: 10rem;
   cursor: pointer;
-  margin: 2vh;
 }
 
 .apply {
@@ -91,11 +37,9 @@
     linear-gradient(90deg, rgba(61, 35, 140, 1) 0%, rgba(139, 60, 197, 1) 100%)
       border-box;
   border: 2px solid transparent;
-  color: #c0bdc1;
 }
 
 .more:hover,
 .apply:hover {
   color: #fafafc;
 }
-

@@ -61,7 +61,6 @@ a {
     rgba(139, 60, 197, 1) 100%
   );
   border: none;
-  color: #c0bdc1;
   padding: 1vh 4vh 1vh 4vh;
   border-radius: 10vh;
   font-size: 1em;
@@ -70,5 +69,4 @@ a {
 
 .button:hover {
   cursor: pointer;
-  color: #fafafc;
 }
