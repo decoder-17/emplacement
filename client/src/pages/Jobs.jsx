@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { MdSearch } from "react-icons/md";
 import "../assets/css/jobs.css";
 import RecentJobs from "../components/elements/RecentJobs";
+import JobDetails from "../components/elements/JobDetails";
 
 export default function Jobs() {
 
@@ -45,6 +46,11 @@ export default function Jobs() {
     }, 2000);
   }, []);
 
+  const [detailsVisible, setdetailsVisible] = useState(false)
+  const [jobId, setjobId] = useState("")
+  const passJobId = () => {
+    setdetailsVisible(true)
+  }
   return (
     <div className="jobs">
       <div className="navigation">
@@ -89,7 +95,7 @@ export default function Jobs() {
                   <p className="stipend info"> </p>
                 </div>
                 <div className="btnlist">
-                  <button className="secondary-btn more">View</button>
+                  <button className="secondary-btn more" onClick={() => { passJobId(), setjobId(job._id) }}>View</button>
                   <a href={`https://www.naukri.com${job.jdURL}`} className="secondary-btn apply" target="_blank">Apply</a>
                 </div>
               </div>
@@ -97,6 +103,7 @@ export default function Jobs() {
           </div>
         )}
       </div>}
+      {detailsVisible && <JobDetails Details={jobs} Id={jobId} />}
     </div>
   );
 }
