@@ -42,7 +42,7 @@ export const Navbar = () => {
         </ul>
       </div>
       <div className="sigin">
-        <button type="button" className="button" onClick={signIn}>{status}</button>
+        <button type="button" className="text-[#c0bdc1] rounded-full hover:text-[#fafafc]" onClick={signIn}>{status}</button>
       </div>
     </div>
   );

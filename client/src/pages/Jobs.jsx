@@ -92,12 +92,12 @@ export default function Jobs() {
                   <p className="timeperiod info">Time period :  Months</p>
                   <p className="stipend info"> </p>
                 </div>
-                <div className="btnlist">
-                  <button className="secondary-btn more" onClick={() => {
+                <div className="btnlist flex flex-row px-3 py-3 my-3 self-center ">
+                  <button className="flex py-2 mx-2 w-32 secondary-btn  text-center justify-center more" onClick={() => {
                     setdetailsVisible(true);
                     setjobId(job._id);
                   }}>View</button>
-                  <a href={`https://www.naukri.com${job.jdURL}`} className="secondary-btn apply" target="_blank">Apply</a>
+                  <a href={`https://www.naukri.com${job.jdURL}`} className="flex py-2 mx-2 w-40 secondary-btn  text-center justify-center apply" target="_blank">Apply</a>
                 </div>
               </div>
             ))}

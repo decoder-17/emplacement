@@ -5,27 +5,27 @@ import heroimg from '../../assets/images/heroimg.svg'
 
 export const Hero = () => {
   return (
-    <div className='body'>
-      <div className='text'>
-        <div className='tagline'>Discover New Opportunities</div>
-        <div className='details'>
-          <p>
+    <div className='body flex flex-col sm:flex-row my-10 py-10'>
+      <div className='text sm:flex-1 my-10 py-10'>
+        <div className=' px-3 text-6xl text-[#a30cfd] tagline'>Discover New Opportunities</div>
+        <div className='details px-3 py-3 '>
+          <p className='py-3'>
             Emplacement is the ultimate job search platform that helps you find the perfect job that matches your skills, experience, and preferences.
           </p>
 
-          <p>
+          <p className='py-3'>
             So why wait? <span class="brand">Sign Up</span> for Emplacement today and start your job search journey towards your dream career.
           </p>
 
 
         </div>
-        <div className='buttonlist'>
-          <Link to='./Jobs' className='secondary-btn apply'>Get Placed</Link>
-          <Link to='./About' className='secondary-btn more'>Learn more</Link>
+        <div className='buttonlist flex flex-row px-3 py-3 my-3 self-center'>
+          <Link to='./Jobs' className=' flex py-2 mx-3 w-40 secondary-btn apply text-center justify-center'>Get Placed</Link>
+          <Link to='./About' className=' flex py-2 mx-3 w-40 secondary-btn  text-center justify-center more'>Learn more</Link>
         </div>
       </div>
-      <div className='image'>
-        <img src={heroimg} alt="heroimg" className='heroimg' />
+      <div className='flex sm:flex-1 px-6 py-6 self-center'>
+        <img src={heroimg} alt="heroimg" className=' px-6 py-6 flex-1 h-full w-auto self-center' />
       </div>
 
     </div >

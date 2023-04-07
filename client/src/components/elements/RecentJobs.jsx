@@ -76,13 +76,13 @@ export default function RecentJobs() {
                       </p>
                       <p className="stipend info"> {job.stipendRange}</p>
                     </div>
-                    <div className="btnlist">
-                      <button className="secondary-btn more" onClick={() => {
+                    <div className="btnlist flex flex-row px-3 py-3 my-3 self-center ">
+                      <button className="flex py-2 mx-2 w-32 secondary-btn  text-center justify-center more" onClick={() => {
                         setdetailsVisible(true);
                         setjobId(job._id);
                       }}>View</button>
                       <a
-                        className="secondary-btn apply"
+                        className="flex py-2 mx-2 w-40 secondary-btn text-center justify-center apply"
                         href={`https://cuvette.tech/app/student/internship/${job._id}`}
                         target="_blank">
                         Apply
