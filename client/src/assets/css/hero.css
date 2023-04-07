@@ -16,12 +16,6 @@
   font-weight: lighter;
 }
 
-.secondary-btn {
-  color: #c0bdc1;
-  border-radius: 10rem;
-  cursor: pointer;
-}
-
 .apply {
   background: rgb(61, 35, 140);
   background: linear-gradient(
@@ -40,6 +34,8 @@
 }
 
 .more:hover,
-.apply:hover {
+.apply:hover,
+.changemode:hover {
   color: #fafafc;
+  cursor: pointer;
 }
