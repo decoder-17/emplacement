@@ -5,7 +5,8 @@ import RecentJobs from "../components/elements/RecentJobs";
 import JobDetails from "../components/elements/JobDetails";
 
 export default function Jobs() {
-
+  const [detailsVisible, setdetailsVisible] = useState(false)
+  const [jobId, setjobId] = useState("")
   const [recent, setrecent] = useState(true)
   const [search, setsearch] = useState(false)
   const showRecent = () => {
@@ -46,8 +47,7 @@ export default function Jobs() {
     }, 2000);
   }, []);
 
-  const [detailsVisible, setdetailsVisible] = useState(false)
-  const [jobId, setjobId] = useState("")
+
 
   return (
     <div className="jobs">
@@ -70,7 +70,7 @@ export default function Jobs() {
         {jobs.jobDetails && (
           <div className="card">
             {jobs.jobDetails.map((job) => (
-              <div key={job.id} className="job-info">
+              <div key={job._id} className="job-info">
                 <div className="card-heading">
                   <img
                     src={""}
@@ -93,7 +93,10 @@ export default function Jobs() {
                   <p className="stipend info"> </p>
                 </div>
                 <div className="btnlist">
-                  <button className="secondary-btn more" onClick={() => { setdetailsVisible(true), setjobId(job._id) }}>View</button>
+                  <button className="secondary-btn more" onClick={() => {
+                    setdetailsVisible(true);
+                    setjobId(job._id);
+                  }}>View</button>
                   <a href={`https://www.naukri.com${job.jdURL}`} className="secondary-btn apply" target="_blank">Apply</a>
                 </div>
               </div>
@@ -101,9 +104,11 @@ export default function Jobs() {
           </div>
         )}
       </div>}
-      {console.log(detailsVisible)}
-      {detailsVisible && <JobDetails Details={jobs} Id={jobId} detailsVisible={setdetailsVisible} />}
-      {console.log(detailsVisible)}
+      {
+        detailsVisible && <JobDetails Details={jobs} Id={jobId} detailsVisible={detailsVisible} toggle={setdetailsVisible} />
+      }
+
+
     </div>
   );
 }

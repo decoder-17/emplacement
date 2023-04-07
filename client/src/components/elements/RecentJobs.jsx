@@ -52,7 +52,7 @@ export default function RecentJobs() {
             <div className="card">
               {
                 jobs.data.map((job) => (
-                  <div key={job.id} className="job-info">
+                  <div key={job._id} className="job-info">
                     <div className="card-heading">
                       <img
                         src={job.refUser.refCompanyProfile.logoUrl}
@@ -77,7 +77,10 @@ export default function RecentJobs() {
                       <p className="stipend info"> {job.stipendRange}</p>
                     </div>
                     <div className="btnlist">
-                      <button className="secondary-btn more" onClick={() => { passJobId(), setjobId(job._id) }}>View</button>
+                      <button className="secondary-btn more" onClick={() => {
+                        setdetailsVisible(true);
+                        setjobId(job._id);
+                      }}>View</button>
                       <a
                         className="secondary-btn apply"
                         href={`https://cuvette.tech/app/student/internship/${job._id}`}
@@ -94,7 +97,7 @@ export default function RecentJobs() {
             </div>
           )}
       </SkeletonTheme>
-      {detailsVisible && <JobDetails Details={jobs} Id={jobId} />}
+      {detailsVisible && <JobDetails Details={jobs} Id={jobId} detailsVisible={detailsVisible} toggle={setdetailsVisible} />}
     </div>
   );
 }
