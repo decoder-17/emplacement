@@ -20,8 +20,8 @@ export const Hero = () => {
 
         </div>
         <div className='buttonlist flex flex-row px-3 py-3 my-3 self-center'>
-          <Link to='./Jobs' className=' flex py-2 mx-3 w-40 secondary-btn apply text-center justify-center'>Get Placed</Link>
-          <Link to='./About' className=' flex py-2 mx-3 w-40 secondary-btn  text-center justify-center more'>Learn more</Link>
+          <Link to='./Jobs' className='text-[#c0bdc1] flex py-2 mx-3 w-40 rounded-full apply text-center justify-center'>Get Placed</Link>
+          <Link to='./About' className='text-[#c0bdc1] flex py-2 mx-3 w-40 rounded-full text-center justify-center more'>Learn more</Link>
         </div>
       </div>
       <div className='flex sm:flex-1 px-6 py-6 self-center'>
