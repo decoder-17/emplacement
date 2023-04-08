@@ -7,11 +7,6 @@
   padding: 2vh;
 }
 
-.brandname {
-  color: #c0bdc1;
-  font-weight: bold;
-}
-
 .logospace {
   display: flex;
   flex-direction: row;
