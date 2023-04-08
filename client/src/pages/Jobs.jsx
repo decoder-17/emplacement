@@ -44,7 +44,7 @@ export default function Jobs() {
   useEffect(() => {
     setTimeout(() => {
       fetchJobDataOnSearch();
-    }, 2000);
+    }, 1000);
   }, []);
 
 
@@ -93,11 +93,11 @@ export default function Jobs() {
                   <p className="stipend info"> </p>
                 </div>
                 <div className="btnlist flex flex-row px-3 py-3 my-3 self-center ">
-                  <button className="flex py-2 mx-2 w-32 secondary-btn  text-center justify-center more" onClick={() => {
+                  <button className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center more" onClick={() => {
                     setdetailsVisible(true);
                     setjobId(job._id);
                   }}>View</button>
-                  <a href={`https://www.naukri.com${job.jdURL}`} className="flex py-2 mx-2 w-40 secondary-btn  text-center justify-center apply" target="_blank">Apply</a>
+                  <a href={`https://www.naukri.com${job.jdURL}`} className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center apply" target="_blank">Apply</a>
                 </div>
               </div>
             ))}

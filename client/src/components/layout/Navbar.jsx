@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useContext } from "react";
 import { Link, useNavigate } from 'react-router-dom'
 import { auth, provider } from '../../config/firebase'
 import { signInWithPopup, signOut } from 'firebase/auth'
@@ -7,9 +7,10 @@ import '../../assets/css/navbar.css'
 import logo from '/logo.png'
 import darktheme from '../../assets/images/dark-theme.svg'
 import lighttheme from '../../assets/images/light-mode.svg'
+import { ThemeContext } from "../../App";
 
 export const Navbar = () => {
-  const [theme, settheme] = useState(false)
+  const theme = useContext(ThemeContext);
   const navigate = useNavigate();
   const [status, setstatus] = useState("Sign In")
   const [user] = useAuthState(auth);

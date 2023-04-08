@@ -27,10 +27,10 @@ export default function CardSkeleton() {
           </p>
         </div>
         <div className="btnlist">
-          <button className="secondary-btn more">
+          <button className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center more">
             View
           </button>
-          <a className="secondary-btn apply" target="_blank">
+          <a className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center apply" target="_blank">
             Apply
           </a>
         </div>
@@ -58,10 +58,10 @@ export default function CardSkeleton() {
           </p>
         </div>
         <div className="btnlist">
-          <button className="secondary-btn more">
+          <button className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center more">
             View
           </button>
-          <a className="secondary-btn apply" target="_blank">
+          <a className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center apply" target="_blank">
             Apply
           </a>
         </div>
@@ -89,10 +89,10 @@ export default function CardSkeleton() {
           </p>
         </div>
         <div className="btnlist">
-          <button className="secondary-btn more">
+          <button className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center more">
             View
           </button>
-          <a className="secondary-btn apply" target="_blank">
+          <a className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center apply" target="_blank">
             Apply
           </a>
         </div>
@@ -120,10 +120,10 @@ export default function CardSkeleton() {
           </p>
         </div>
         <div className="btnlist">
-          <button className="secondary-btn more">
+          <button className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center more">
             View
           </button>
-          <a className="secondary-btn apply" target="_blank">
+          <a className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center apply" target="_blank">
             Apply
           </a>
         </div>
@@ -151,10 +151,10 @@ export default function CardSkeleton() {
           </p>
         </div>
         <div className="btnlist">
-          <button className="secondary-btn more">
+          <button className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center more">
             View
           </button>
-          <a className="secondary-btn apply" target="_blank">
+          <a className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center apply" target="_blank">
             Apply
           </a>
         </div>
@@ -182,10 +182,10 @@ export default function CardSkeleton() {
           </p>
         </div>
         <div className="btnlist">
-          <button className="secondary-btn more">
+          <button className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center more">
             View
           </button>
-          <a className="secondary-btn apply" target="_blank">
+          <a className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center apply" target="_blank">
             Apply
           </a>
         </div>
