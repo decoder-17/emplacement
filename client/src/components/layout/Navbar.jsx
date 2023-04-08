@@ -35,7 +35,6 @@ export const Navbar = () => {
             <img src={logo} alt="logo" className="logo" />
             <div className=" bg-gray-100 dark:bg-gray-950 text-black dark:text-[#c0bdc1]"><Link to={`/`} >emplacement</Link></div>
           </div>
-
         </div>
         <div className="nav">
           <ul>
