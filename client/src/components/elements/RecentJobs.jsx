@@ -15,7 +15,7 @@ export default function RecentJobs() {
   const url =
     "https://backend-decoder-17.cloud.okteto.net/api/v1/site/cuvette/internships?";
 
-  const fetchJobDataOnSearch = async () => {
+  const fetchJobDataOnLoad = async () => {
     setError([]);
     try {
       await fetch(url)
@@ -36,7 +36,7 @@ export default function RecentJobs() {
   };
 
   useEffect(() => {
-    fetchJobDataOnSearch();
+    fetchJobDataOnLoad();
   }, []);
 
 

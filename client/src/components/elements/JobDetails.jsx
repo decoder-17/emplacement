@@ -28,5 +28,19 @@ export default function JobDetails({ Details, Id, detailsVisible, toggle }) {
           ))
         }
       </div>
-    ))
+    ) ||
+    jobs.jobDetails && (<div className="modal">
+      {
+        jobs.jobDetails.filter((job) => {
+          return displayData === '' ? job : job.jobId.includes(displayData);
+        }).map((job) => (
+          <div className='modal-bg' key={job.jobId}>
+            <div className='close'><button className='closebtn' onClick={toggleModal}>X</button></div>
+            <div className="modal-details">
+              <div className="modal-header">{job.companyName}</div>
+            </div>
+          </div>
+        ))
+      }
+    </div>))
 }
