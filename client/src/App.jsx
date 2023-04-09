@@ -21,20 +21,22 @@ export function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className="App">
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<><Home /> <TelegramPopup /></>} />
-            <Route path="/Telegram" element={<Telegram />} />
-            <Route path="/Jobs" element={<Jobs />} />
-            <Route path="/About" element={<About />} />
-            <Route path="*" element={<Error />} />
-          </Routes>
-          <Footer />
-        </Router>
+      <div className={theme ? 'dark' : ''}>
+        <div className="App bg-[#FADA9D] dark:bg-[#2D033B] ">
+          <Router>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<><Home /> <TelegramPopup /></>} />
+              <Route path="/Telegram" element={<Telegram />} />
+              <Route path="/Jobs" element={<Jobs />} />
+              <Route path="/About" element={<About />} />
+              <Route path="*" element={<Error />} />
+            </Routes>
+            <Footer />
+          </Router>
+        </div>
       </div>
-    </ThemeContext.Provider>
+    </ThemeContext.Provider >
 
   )
 }

@@ -5,10 +5,10 @@ import heroimg from '../../assets/images/heroimg.svg'
 
 export const Hero = () => {
   return (
-    <div className='body flex flex-col sm:flex-row my-10 py-10'>
+    <div className='body flex flex-col sm:flex-row my-10 py-10 dark:bg-[#2D033B]'>
       <div className='text sm:flex-1 my-10 py-10'>
         <div className=' px-3 text-6xl text-[#a30cfd] tagline'>Discover New Opportunities</div>
-        <div className='details px-3 py-3 '>
+        <div className='details px-3 py-3 text-[#fcfcfc] '>
           <p className='py-3'>
             Emplacement is the ultimate job search platform that helps you find the perfect job that matches your skills, experience, and preferences.
           </p>

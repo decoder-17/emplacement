@@ -29,14 +29,14 @@ export const Navbar = () => {
 
   return (
     <div className={theme ? 'dark' : ''}>
-      <div className="navbar bg-gray-100 dark:bg-gray-950 text-black dark:text-[#c0bdc1]">
+      <div className="navbar flex flex-row justify-between items-center bg-[#E5B8F4] dark:bg-[#2D033B] text-black dark:text-[#c0bdc1] p-2">
         <div className="brand">
-          <div className="logospace">
+          <div className="flex flex-row justify-center items-center">
             <img src={logo} alt="logo" className="logo" />
-            <div className=" bg-gray-100 dark:bg-gray-950 text-black dark:text-[#c0bdc1]"><Link to={`/`} >emplacement</Link></div>
+            <div className="dark:text-[#c0bdc1]"><Link to={`/`} >emplacement</Link></div>
           </div>
         </div>
-        <div className="nav">
+        <div className="nav text-[#fafafc]">
           <ul>
             <li> <Link to={`/`} className="navmenu">Home</Link> </li>
             <li><Link to={'/Jobs'} className="navmenu">Jobs</Link></li>

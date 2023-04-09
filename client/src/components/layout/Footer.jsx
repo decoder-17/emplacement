@@ -8,9 +8,9 @@ import { RiInstagramFill } from 'react-icons/ri'
 export default function Footer() {
   return (<>
 
-    <div className="prefooter">
+    <div className="flex flex-row justify-between items-center bg-[#E5B8F4] dark:bg-[#2D033B] text-black dark:text-[#c0bdc1] p-2">
       <div className="brand">
-        <div className="logospace">
+        <div className="flex flex-row justify-center items-center">
           <img src={logo} alt="logo" className="logo" />
           <div className="brandname"><Link to={`/`} >emplacement</Link></div>
         </div>
