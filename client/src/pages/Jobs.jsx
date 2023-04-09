@@ -47,6 +47,9 @@ export default function Jobs() {
     }, 1000);
   }, []);
 
+  const passJobId = () => {
+    setdetailsVisible(true)
+  }
 
 
   return (
@@ -70,7 +73,7 @@ export default function Jobs() {
         {jobs.jobDetails && (
           <div className="card">
             {jobs.jobDetails.map((job) => (
-              <div key={job._id} className="job-info">
+              <div key={job.jobId} className="job-info">
                 <div className="card-heading">
                   <img
                     src={""}
@@ -95,18 +98,22 @@ export default function Jobs() {
                 <div className="btnlist flex flex-row px-3 py-3 my-3 self-center ">
                   <button className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center more" onClick={() => {
                     setdetailsVisible(true);
-                    setjobId(job._id);
+                    setjobId(job.jobId);
                   }}>View</button>
                   <a href={`https://www.naukri.com${job.jdURL}`} className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center apply" target="_blank">Apply</a>
                 </div>
               </div>
             ))}
+            {console.log(jobs.jobDetails)}
           </div>
+
         )}
       </div>}
       {
         detailsVisible && <JobDetails Details={jobs} Id={jobId} detailsVisible={detailsVisible} toggle={setdetailsVisible} />
+
       }
+
 
 
     </div>

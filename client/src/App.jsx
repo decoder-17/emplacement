@@ -15,7 +15,6 @@ export const ThemeContext = React.createContext();
 export function App() {
 
   const [theme, setTheme] = useState(false);
-
   function toggleTheme() {
     setTheme(prevTheme => !prevTheme);
   }
