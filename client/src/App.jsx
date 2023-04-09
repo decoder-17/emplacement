@@ -14,14 +14,14 @@ export const ThemeContext = React.createContext();
 
 export function App() {
 
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState("");
   function toggleTheme() {
-    setTheme(prevTheme => !prevTheme);
+    setTheme((curr) => (curr === "" ? "dark" : ""));
   }
 
   return (
-    <div className="App">
-      <ThemeContext.Provider value={theme}>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <div className="App">
         <Router>
           <Navbar />
           <Routes>
@@ -33,8 +33,9 @@ export function App() {
           </Routes>
           <Footer />
         </Router>
-      </ThemeContext.Provider>
-    </div>
+      </div>
+    </ThemeContext.Provider>
+
   )
 }
 

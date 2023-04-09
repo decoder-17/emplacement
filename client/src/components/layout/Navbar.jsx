@@ -44,7 +44,7 @@ export const Navbar = () => {
             <li><Link to={`/About`} className="navmenu">About Us</Link></li>
           </ul>
         </div>
-        <div className="changemode"> <img src={theme ? darktheme : lighttheme} alt="dark-theme" className="h-12 w-auto" onClick={() => { settheme(theme => !theme) }}></img> </div>
+        <div className="changemode"> <img src={theme ? darktheme : lighttheme} alt="dark-theme" className="h-12 w-auto" onClick={() => { toggleTheme }}></img> </div>
         <div className="sigin">
           <button className="text-[#c0bdc1] rounded-full button flex py-2 mx-2 w-32 text-center justify-center hover:text-[#fafafc]" onClick={signIn}>{status}</button>
         </div>
