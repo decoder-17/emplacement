@@ -102,6 +102,7 @@
 
 .job-info:hover {
   box-shadow: none;
+  transform: scale(1.1, 1.1);
 }
 
 .card-heading {
