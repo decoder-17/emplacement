@@ -1,13 +1,11 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #2d033b;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  font-family: "Krona One", sans-serif;
   font-family: "Roboto", sans-serif;
 }
