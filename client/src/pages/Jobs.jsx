@@ -86,7 +86,7 @@ export default function Jobs() {
                   <div className="card-heading">
                     <img
                       src={job.logoPath || companylogo}
-                      className="logo companylogo"
+                      className="logo companylogo mx-2 my-2"
                       alt="Company Logo"
                     />
                     <div className="header">

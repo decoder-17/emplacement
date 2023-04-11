@@ -56,7 +56,7 @@ export default function RecentJobs() {
                   <div className="card-heading">
                     <img
                       src={job.refUser.refCompanyProfile.logoUrl || companylogo}
-                      className="logo companylogo"
+                      className="logo companylogo mx-2 my-2 rounded-full"
                       alt="Company Logo"
                     />
                     <div className="header">
@@ -68,13 +68,16 @@ export default function RecentJobs() {
                   </div>
                   <div className="companydetails">
                     <p className="companylocation info">
-                      Office Location :
+                      Office Location : 
                       {job.refUser.refCompanyProfile.refLocation.state}
                     </p>
                     <p className="timeperiod info">
                       Time period : {job.duration} Months
                     </p>
-                    <p className="stipend info"> {job.stipendRange}</p>
+                    <p className="stipend info">
+                      Stipend : Rs.
+                      {job.stipendRange[0]} - Rs.{job.stipendRange[1]}{" "}
+                    </p>
                   </div>
                   <div className="btnlist flex flex-row px-3 py-3 my-3 self-center ">
                     <button
