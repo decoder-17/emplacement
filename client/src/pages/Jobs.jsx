@@ -3,6 +3,7 @@ import { MdSearch } from "react-icons/md";
 import "../assets/css/jobs.css";
 import RecentJobs from "../components/elements/RecentJobs";
 import JobDetails from "../components/elements/JobDetails";
+import companylogo from "../assets/images/company.svg";
 
 export default function Jobs() {
   const [detailsVisible, setdetailsVisible] = useState(false);
@@ -84,8 +85,8 @@ export default function Jobs() {
                 <div key={job.jobId} className="job-info">
                   <div className="card-heading">
                     <img
-                      src={""}
-                      className="logo companylogo"
+                      src={job.logoPath || companylogo}
+                      className="logo companylogo mx-2 my-2"
                       alt="Company Logo"
                     />
                     <div className="header">

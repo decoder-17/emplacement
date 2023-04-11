@@ -114,10 +114,6 @@
   margin: 1em;
 }
 
-.companylogo {
-  background-color: #202528;
-}
-
 .companydetails {
   display: flex;
   justify-content: flex-start;
