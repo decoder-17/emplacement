@@ -13,7 +13,7 @@ import Footer from "./components/layout/Footer";
 export const ThemeContext = React.createContext();
 
 export function App() {
-  const [theme, setTheme] = useState("");
+  const [theme, setTheme] = useState("dark");
   function toggleTheme() {
     setTheme((curr) => (curr === "" ? "dark" : ""));
   }
@@ -21,7 +21,7 @@ export function App() {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className={theme ? "dark" : ""}>
-        <div className="App bg-[#FADA9D] dark:bg-[#2D033B] ">
+        <div className="App  ">
           <Router>
             <Navbar />
             <Routes>

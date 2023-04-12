@@ -2,7 +2,27 @@
   max-width: 1280px;
   margin: 0 auto;
   box-sizing: border-box;
-  background-color: #2d033b;
+  /* background: hsla(285, 87%, 35%, 1);
+
+  background: linear-gradient(
+    180deg,
+    hsla(285, 87%, 35%, 1) 0%,
+    hsla(285, 90%, 12%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    180deg,
+    hsla(285, 87%, 35%, 1) 0%,
+    hsla(285, 90%, 12%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    180deg,
+    hsla(285, 87%, 35%, 1) 0%,
+    hsla(285, 90%, 12%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#810CA8", endColorstr="#2D033B", GradientType=1 ); */
 }
 
 * {

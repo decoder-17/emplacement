@@ -5,7 +5,7 @@ import heroimg from "../../assets/images/heroimg.svg";
 
 export const Hero = () => {
   return (
-    <div className="body flex flex-col sm:flex-row my-10 py-10 dark:bg-[#2D033B]">
+    <div className="body flex flex-col sm:flex-row my-10 py-10">
       <div className="text sm:flex-1 my-10 py-10">
         <div className=" px-3 text-6xl text-[#a30cfd] tagline">
           Discover New Opportunities
