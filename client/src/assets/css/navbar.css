@@ -21,14 +21,15 @@ li {
   font-weight: bold;
 }
 
-.navmenu:hover {
+li:hover {
   cursor: pointer;
   color: #a30cfd;
+  border-bottom: 0.1em solid #939194;
+  transform: scale(1.1, 1.1);
 }
 
-.navmenu,
-a {
-  text-decoration: none;
+.active {
+  border-bottom: 0.1em solid #a30cfd;
 }
 
 .button {
