@@ -8,6 +8,7 @@ import logo from "/logo.png";
 import darktheme from "../../assets/images/dark-theme.svg";
 import lighttheme from "../../assets/images/light-mode.svg";
 import { ThemeContext } from "../../App";
+import { RxAvatar } from "react-icons/rx";
 
 export const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -45,10 +46,9 @@ export const Navbar = () => {
         <div className="nav text-[#fafafc]">
           <ul>
             <li className={splitLocation[1] === "" ? "active" : ""}>
-              {" "}
               <Link to={`/`} className="navmenu">
                 Home
-              </Link>{" "}
+              </Link>
             </li>
             <li className={splitLocation[1] === "Jobs" ? "active" : ""}>
               <Link to={"/Jobs"} className="navmenu">
@@ -56,7 +56,6 @@ export const Navbar = () => {
               </Link>
             </li>
             <li className={splitLocation[1] === "Telegram" ? "active" : ""}>
-              {" "}
               <Link to={`/Telegram`} className="navmenu">
                 Telegram
               </Link>
@@ -79,13 +78,14 @@ export const Navbar = () => {
             }}
           ></img>{" "}
         </div> */}
-        <div className="sigin">
-          <button
+        <div className="signin">
+          <RxAvatar size={32} onClick={""} />
+          {/* <button
             className="text-[#c0bdc1] rounded-full button flex py-2 mx-2 w-32 text-center justify-center hover:text-[#fafafc]"
             onClick={signIn}
           >
             {status}
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

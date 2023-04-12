@@ -101,7 +101,7 @@ export default function Jobs() {
                   </div>
                   <div className="btnlist flex flex-row px-3 py-3 my-3 self-center ">
                     <button
-                      className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center more"
+                      className="flex text-black py-2 mx-2 w-32 rounded-full  text-center justify-center more"
                       onClick={() => {
                         setdetailsVisible(true);
                         setjobId(job.jobId);

@@ -68,7 +68,7 @@ export default function RecentJobs() {
                   </div>
                   <div className="companydetails">
                     <p className="companylocation info">
-                      Office Location : 
+                      Office Location :
                       {job.refUser.refCompanyProfile.refLocation.state}
                     </p>
                     <p className="timeperiod info">
@@ -81,7 +81,7 @@ export default function RecentJobs() {
                   </div>
                   <div className="btnlist flex flex-row px-3 py-3 my-3 self-center ">
                     <button
-                      className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center more"
+                      className="flex text-black py-2 mx-2 w-32 rounded-full  text-center justify-center more"
                       onClick={() => {
                         setdetailsVisible(true);
                         setjobId(job._id);

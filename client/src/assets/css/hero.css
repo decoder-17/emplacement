@@ -27,13 +27,15 @@
 }
 
 .more {
-  background: linear-gradient(#202528, #202528) padding-box,
+  background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(90deg, rgba(61, 35, 140, 1) 0%, rgba(139, 60, 197, 1) 100%)
       border-box;
   border: 2px solid transparent;
 }
 
-.more:hover,
+.more:hover {
+  cursor: pointer;
+}
 .apply:hover,
 .changemode:hover {
   color: #fafafc;

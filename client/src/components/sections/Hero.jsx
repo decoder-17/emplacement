@@ -31,7 +31,7 @@ export const Hero = () => {
           </Link>
           <Link
             to="./About"
-            className="text-[#c0bdc1] flex py-2 mx-3 w-40 rounded-full text-center justify-center more"
+            className="text-[#000] flex py-2 mx-3 w-40 rounded-full text-center justify-center more"
           >
             Learn more
           </Link>

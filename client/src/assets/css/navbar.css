@@ -21,8 +21,12 @@ li {
   font-weight: bold;
 }
 
-li:hover {
+li:hover,
+.signin:hover {
   cursor: pointer;
+}
+
+li:hover {
   color: #a30cfd;
   border-bottom: 0.1em solid #939194;
   transform: scale(1.1, 1.1);
