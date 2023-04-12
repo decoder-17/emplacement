@@ -28,7 +28,7 @@ export const Navbar = () => {
 
   return (
     <div className={theme ? "dark" : ""}>
-      <div className="navbar flex flex-row justify-between items-center bg-[#E5B8F4] dark:bg-[#2D033B] text-black dark:text-[#c0bdc1] p-2">
+      <div className="navbar flex flex-row justify-between items-center bg-[#E5B8F4] dark:bg-[#2F033F] text-black dark:text-[#c0bdc1] p-2">
         <div className="brand">
           <div className="flex flex-row justify-center items-center">
             <img src={logo} alt="logo" className="logo" />
@@ -63,7 +63,7 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="changemode">
+        {/* <div className="changemode">
           {" "}
           <img
             src={theme ? darktheme : lighttheme}
@@ -73,7 +73,7 @@ export const Navbar = () => {
               toggleTheme();
             }}
           ></img>{" "}
-        </div>
+        </div> */}
         <div className="sigin">
           <button
             className="text-[#c0bdc1] rounded-full button flex py-2 mx-2 w-32 text-center justify-center hover:text-[#fafafc]"
