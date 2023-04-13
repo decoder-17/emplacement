@@ -6,6 +6,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.pengrad.telegrambot.model.Chat;
 import com.pengrad.telegrambot.model.Message;
+import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.EditMessageText;
 import com.pengrad.telegrambot.request.SendMessage;
 import com.pengrad.telegrambot.response.SendResponse;
@@ -31,8 +32,8 @@ public class SearchController {
     public void sendSearchResult(String role, TelegramBot bot, Boolean isHomePage) throws IOException {
 
         SendResponse sentMesg = bot
-                .execute(new SendMessage(chat.id(), "Fetching Results Please wait.")
-                        .replyToMessageId(message.messageId()));
+                .execute(new SendMessage(chat.id(), "_Fetching Results Please wait._")
+                        .replyToMessageId(message.messageId()).parseMode(ParseMode.Markdown));
         String res = null;
         if (!isHomePage) {
             res = fetchInternships(role);
@@ -41,7 +42,8 @@ public class SearchController {
         }
         if (res == null) {
             EditMessageText editMessageText = new EditMessageText(chat.id(), sentMesg.message().messageId(),
-                    "Failed to fetch\nPlease make sure you have entered correct domain.").disableWebPagePreview(true);
+                    "_Failed to fetch\nPlease make sure you have entered correct domain._").disableWebPagePreview(true)
+                    .parseMode(ParseMode.Markdown);
             bot.execute(editMessageText);
             return;
         }
@@ -54,29 +56,31 @@ public class SearchController {
             JsonObject obj = jsonElement2.getAsJsonObject();
             for (JsonElement sk : obj.get("refSkills").getAsJsonArray()) {
                 JsonObject o = sk.getAsJsonObject();
-                skills += o.get("name").toString().replace("\"", "") + " ";
+                skills += o.get("name").toString().replace("\"", "") + ", ";
             }
-            msg += "Company: " + obj.get("refUser").getAsJsonObject().get("refCompanyProfile").getAsJsonObject()
-                    .get("companyName").toString().replace("\"", "") + "\n"
-                    + "Role: " + (obj.get("refInternshipTitle").getAsJsonObject().get("name").toString()
+            msg += "_Company_: *" + obj.get("refUser").getAsJsonObject().get("refCompanyProfile").getAsJsonObject()
+                    .get("companyName").toString().replace("\"", "") + "*\n"
+                    + "_Role_: *" + (obj.get("refInternshipTitle").getAsJsonObject().get("name").toString()
                             .replace("\"", "").replace("\"",
                                     "")
-                            + " (" + obj.get("duration") + " months)")
+                            + "* _(" + obj.get("duration") + " months)_")
                     + "\n"
-                    + "Salary: "
-                    + (obj.get("stipendRange").getAsJsonArray().toString().replace("\"", "").replace("\"", "")) + "\n"
-                    + "Location: "
+                    + "_Salary_: Rs."
+                    + (obj.get("stipendRange").getAsJsonArray().toString().replace("\"", "").replace(",", "-")) + "\n"
+                    + "_Location_: *"
                     + obj.get("refUser").getAsJsonObject().get("refCompanyProfile").getAsJsonObject().get("refLocation")
                             .getAsJsonObject().get("state").toString().replace("\"", "")
-                    + "\n"
-                    + "Skills: " + skills
-                    + "\n"
-                    + "https://cuvette.tech/app/student/internship/" + obj.get("_id").toString()
-                            .replace("\"", "")
+                    + "*\n"
+                    + "_Skills_: *" + skills
+                    + "*\n"
+                    + "[Apply Here]" + "(https://cuvette.tech/app/student/internship/" + obj.get("_id").toString()
+                            .replace("\"",
+                                    "")
+                    + ")"
                     + "\n"
                     + "\n";
             EditMessageText editMessageText = new EditMessageText(chat.id(), sentMesg.message().messageId(),
-                    msg).disableWebPagePreview(true);
+                    msg).disableWebPagePreview(true).parseMode(ParseMode.Markdown);
             bot.execute(editMessageText);
         }
     }
