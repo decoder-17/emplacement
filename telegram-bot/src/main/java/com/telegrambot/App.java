@@ -34,7 +34,6 @@ public class App implements TelegramMvcController {
 
     @BotRequest(value = "/start", type = { MessageType.CALLBACK_QUERY, MessageType.MESSAGE })
     public void start(Chat chat, Message message, TelegramBot bot) throws IOException {
-        System.out.println(token); // TODO -> need to remove this line
         WelcomeController wel = new WelcomeController(message, chat);
         wel.welcomeUser(bot);
     }
