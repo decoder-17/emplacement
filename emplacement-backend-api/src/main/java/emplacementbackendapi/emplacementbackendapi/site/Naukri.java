@@ -20,7 +20,6 @@ public class Naukri {
         try {
             role = URLEncoder.encode(role, StandardCharsets.UTF_8.toString());
         } catch (UnsupportedEncodingException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         String url = "https://www.naukri.com/jobapi/v3/search?noOfResults=20&urlType=search_by_keyword&searchType=adv&keyword="
