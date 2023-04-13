@@ -34,17 +34,20 @@
 }
 
 .search {
-  background: linear-gradient(#202528, #202528) padding-box,
+  background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(90deg, rgba(61, 35, 140, 1) 0%, rgba(139, 60, 197, 1) 100%)
       border-box;
   border: 2px solid transparent;
   margin: 2vh;
-  color: #c0bdc1;
+  color: #000;
 }
 
-.recent:hover,
-.search:hover {
+.recent:hover {
   color: #fff;
+}
+
+.job-btn > .search:hover {
+  font-weight: bold;
 }
 
 .search-btn {
@@ -145,6 +148,7 @@
 
 .info {
   font-weight: bold;
+  background-color: #202528;
 }
 
 .btnlist {

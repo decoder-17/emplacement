@@ -31,7 +31,7 @@ export const Hero = () => {
           </Link>
           <Link
             to="./About"
-            className="text-[#c0bdc1] flex py-2 mx-3 w-40 rounded-full text-center justify-center more"
+            className="text-[#000] flex py-2 mx-3 w-40 rounded-full text-center justify-center more"
           >
             Learn more
           </Link>
@@ -41,7 +41,7 @@ export const Hero = () => {
         <img
           src={heroimg}
           alt="heroimg"
-          className=" px-6 py-6 flex-1 h-full w-auto self-center"
+          className=" px-6 py-6 flex-1 min-w-screen self-center min-h-max"
         />
       </div>
     </div>

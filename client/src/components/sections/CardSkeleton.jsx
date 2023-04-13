@@ -27,7 +27,7 @@ export default function CardSkeleton() {
           </p>
         </div>
         <div className="btnlist">
-          <button className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center more">
+          <button className="flex text-black py-2 mx-2 w-32 rounded-full  text-center justify-center more">
             View
           </button>
           <a
@@ -61,7 +61,7 @@ export default function CardSkeleton() {
           </p>
         </div>
         <div className="btnlist">
-          <button className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center more">
+          <button className="flex text-black py-2 mx-2 w-32 rounded-full  text-center justify-center more">
             View
           </button>
           <a
@@ -95,7 +95,7 @@ export default function CardSkeleton() {
           </p>
         </div>
         <div className="btnlist">
-          <button className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center more">
+          <button className="flex text-black  py-2 mx-2 w-32 rounded-full  text-center justify-center more">
             View
           </button>
           <a
@@ -129,7 +129,7 @@ export default function CardSkeleton() {
           </p>
         </div>
         <div className="btnlist">
-          <button className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center more">
+          <button className="flex text-black  py-2 mx-2 w-32 rounded-full  text-center justify-center more">
             View
           </button>
           <a
@@ -163,7 +163,7 @@ export default function CardSkeleton() {
           </p>
         </div>
         <div className="btnlist">
-          <button className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center more">
+          <button className="flex text-black  py-2 mx-2 w-32 rounded-full  text-center justify-center more">
             View
           </button>
           <a
@@ -197,7 +197,7 @@ export default function CardSkeleton() {
           </p>
         </div>
         <div className="btnlist">
-          <button className="flex py-2 mx-2 w-32 rounded-full  text-center justify-center more">
+          <button className="flex text-black  py-2 mx-2 w-32 rounded-full  text-center justify-center more">
             View
           </button>
           <a
