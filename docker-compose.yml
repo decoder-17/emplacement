@@ -1,20 +1,19 @@
 version: '3.8'
 
 services:
+
+  bot:
+    build : ./telegrambot
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
   backend:
     build: ./emplacement-backend-api
     ports:
       - 8080:8080
     depends_on:
+      - bot
       - frontend
-  bot:
-    build : ./telegram-bot
-    environment:
-      - BOT_TOKEN=${BOT_TOKEN}
-    depends_on:
-      - frontend
-      - backend
   frontend:
     build: ./client
     ports:
-      - 8009:80
+      - 8011:8011
