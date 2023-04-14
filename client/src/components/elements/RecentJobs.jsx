@@ -64,19 +64,21 @@ export default function RecentJobs() {
                         {job.refUser.refCompanyProfile.companyName}
                       </p>
                       <p className="job-desc">{job.refInternshipTitle.name}</p>
+                      {/* <p>posted at</p> */}
                     </div>
                   </div>
                   <div className="companydetails">
                     <p className="companylocation info">
-                      Office Location :
+                      Location :{" "}
                       {job.refUser.refCompanyProfile.refLocation.state}
                     </p>
+                    <p className="info">Mode : {`${job.internshipMode}`}</p>
                     <p className="timeperiod info">
                       Time period : {job.duration} Months
                     </p>
                     <p className="stipend info">
-                      Stipend : Rs.
-                      {job.stipendRange[0]} - Rs.{job.stipendRange[1]}{" "}
+                      Stipend : Rs. {job.stipendRange[0]} - Rs.{" "}
+                      {job.stipendRange[1]}{" "}
                     </p>
                   </div>
                   <div className="btnlist flex flex-row px-3 py-3 my-3 self-center ">
