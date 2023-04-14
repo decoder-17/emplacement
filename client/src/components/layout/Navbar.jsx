@@ -60,11 +60,11 @@ export const Navbar = () => {
                 Telegram
               </Link>
             </li>
-            <li className={splitLocation[1] === "About" ? "active" : ""}>
+            {/* <li className={splitLocation[1] === "About" ? "active" : ""}>
               <Link to={`/About`} className="navmenu">
                 About Us
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         {/* <div className="changemode">

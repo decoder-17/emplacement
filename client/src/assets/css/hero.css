@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600&family=Krona+One&display=swap");
 
+.body {
+  min-height: 75vh;
+}
+
 .brand {
   color: #a30cfd;
   font-weight: bold;
