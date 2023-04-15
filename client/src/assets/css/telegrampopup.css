@@ -9,7 +9,6 @@
   padding: 1.5vh;
   z-index: 2;
   width: 25%;
-  background-color: #2e0249;
   border-radius: 2vh;
   border: 2px solid #c0bdc1;
 }
@@ -18,7 +17,6 @@
   display: flex;
   justify-content: end;
   align-self: flex-end;
-  background-color: #2e0249;
 }
 
 .closebtn {
@@ -36,7 +34,6 @@
 .pophead,
 .popbody {
   color: #fff;
-  background-color: #2e0249;
 }
 
 .pophead {
@@ -64,7 +61,6 @@
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
-  background-color: #2e0249;
 }
 
 .popbutton {
