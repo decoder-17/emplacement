@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 
 public class Cuvette {
 
-    private String CUVETTE_TOKEN = System.getenv("CUVETTE_TOKEN");
+    private static final String TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNzazcwOTEyMEBnbWFpbC5jb20iLCJuYW1lIjoiRmFpemFsIiwiaWQiOiI2NDJhZjQ2NTc2NTg4MzIwOWFiMTRiNmQiLCJ1c2VyVHlwZSI6InN0dWRlbnQiLCJpYXQiOjE2ODA1MzY2NzcsImV4cCI6MTY4MTE0MTQ3N30.jtlkgU1ryIPHKWx-xojSgGuAkUIkuAEacyEcCEQEzkw";
     private static final String USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54";
 
     public String getHomeInterShipDetails(String page) {
@@ -16,7 +16,7 @@ public class Cuvette {
                 .uri(URI.create("https://api.cuvette.tech/api/v1/student/internship-post/active?pageNumber=" + page
                         + "&sortByDate=true&stipendRange=[5000]"))
                 .method("GET", HttpRequest.BodyPublishers.noBody())
-                .setHeader("authorization", CUVETTE_TOKEN)
+                .setHeader("authorization", TOKEN)
                 .setHeader("user-agent", USER_AGENT)
                 .build();
         HttpResponse<String> response;
@@ -35,7 +35,7 @@ public class Cuvette {
                 .uri(URI.create(
                         "https://api.cuvette.tech/api/v1/admin/internship-title?filter=[object%20Object]&pageSize=&pageNumber="))
                 .method("GET", HttpRequest.BodyPublishers.noBody())
-                .setHeader("authorization", CUVETTE_TOKEN)
+                .setHeader("authorization", TOKEN)
                 .setHeader("user-agent", USER_AGENT)
                 .build();
         HttpResponse<String> response;
@@ -54,7 +54,7 @@ public class Cuvette {
                 .uri(URI.create("https://api.cuvette.tech/api/v1/student/internship-post/active?pageNumber=" + page
                         + "&refInternshipTitle=[%22" + role_id + "%22]&sortByDate=true&stipendRange=[5000]"))
                 .method("GET", HttpRequest.BodyPublishers.noBody())
-                .setHeader("authorization", CUVETTE_TOKEN)
+                .setHeader("authorization", TOKEN)
                 .setHeader("user-agent", USER_AGENT)
                 .build();
         HttpResponse<String> response;
