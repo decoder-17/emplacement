@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <>
       <div className="flex flex-row justify-between items-center   text-black dark:text-[#c0bdc1] p-2 footer">
-        <div className="brand">
+        <div>
           <div className="flex flex-row justify-center items-center">
             <img src={logo} alt="logo" className="logo" />
             <div className="brandname">

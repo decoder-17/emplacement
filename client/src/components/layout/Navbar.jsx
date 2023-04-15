@@ -20,6 +20,8 @@ export const Navbar = () => {
   const { pathname } = location;
   const splitLocation = pathname.split("/");
 
+  const [loginVisible, setloginVisible] = useState(false);
+
   const signIn = async () => {
     const result = await signInWithPopup(auth, provider);
     navigate("/Jobs");
@@ -79,13 +81,39 @@ export const Navbar = () => {
           ></img>{" "}
         </div> */}
         <div className="signin">
-          <RxAvatar size={32} onClick={""} />
-          {/* <button
-            className="text-[#c0bdc1] rounded-full button flex py-2 mx-2 w-32 text-center justify-center hover:text-[#fafafc]"
-            onClick={signIn}
-          >
-            {status}
-          </button> */}
+          {user ? (
+            <img
+              src={user?.photoURL}
+              width="30"
+              height="30"
+              className="full-rounded"
+              onClick={() => {
+                setloginVisible((curr) => (curr === false ? true : false));
+              }}
+            />
+          ) : (
+            <RxAvatar
+              size={32}
+              onClick={() => {
+                setloginVisible((curr) => (curr === false ? true : false));
+              }}
+            />
+          )}
+
+          {loginVisible && (
+            <div className={loginVisible ? "signin-menu show" : "signin-menu"}>
+              <div className="user-details">
+                <div className="user-email">{user?.email}</div>
+                <div className="user-name">{user?.displayName}</div>
+              </div>
+              <button
+                className="text-[#c0bdc1] rounded-full button flex py-2 mx-2 w-32 text-center justify-center hover:text-[#fafafc]"
+                onClick={user ? signUserOut : signIn}
+              >
+                {status}
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>
