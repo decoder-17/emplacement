@@ -10,6 +10,8 @@ services:
     build: ./emplacement-backend-api
     ports:
       - 8080:8080
+    environment:
+      - CUVETTE_TOKEN=${CUVETTE_TOKEN}
     depends_on:
       - bot
       - frontend
