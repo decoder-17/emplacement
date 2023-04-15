@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   padding: 5em;
+  min-height: 83.4vh;
 }
 
 .errorimg {

@@ -95,7 +95,7 @@ export default function Jobs() {
                     </div>
                   </div>
                   <div className="companydetails">
-                    <p className="companylocation info">Office Location :</p>
+                    <p className="companylocation info">Location :</p>
                     <p className="timeperiod info">Time period : Months</p>
                     <p className="stipend info"> </p>
                   </div>
