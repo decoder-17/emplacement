@@ -37,7 +37,9 @@ export default function RecentJobs() {
   };
 
   useEffect(() => {
-    fetchJobDataOnLoad();
+    setTimeout(() => {
+      fetchJobDataOnLoad();
+    }, 1000);
   }, []);
 
   const passJobId = () => {
@@ -82,7 +84,7 @@ export default function RecentJobs() {
                     </p>
                   </div>
                   <div className="btnlist flex flex-row px-3 py-3 my-3 self-center ">
-                    <button
+                    <a
                       className="flex text-black py-2 mx-2 w-32 rounded-full  text-center justify-center more"
                       onClick={() => {
                         setdetailsVisible(true);
@@ -90,7 +92,7 @@ export default function RecentJobs() {
                       }}
                     >
                       View
-                    </button>
+                    </a>
                     <a
                       className="flex py-2 mx-2 w-32 rounded-full text-center justify-center apply"
                       href={`https://cuvette.tech/app/student/internship/${job._id}`}

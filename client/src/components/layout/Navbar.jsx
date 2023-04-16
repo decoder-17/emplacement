@@ -45,8 +45,8 @@ export const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="nav text-[#fafafc]">
-          <ul>
+        <div className=" text-[#fafafc]">
+          <ul className="nav">
             <li className={splitLocation[1] === "" ? "active" : ""}>
               <Link to={`/`} className="navmenu">
                 Home

@@ -45,3 +45,15 @@
   color: #fafafc;
   cursor: pointer;
 }
+
+.points {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #a30cfd;
+  font-weight: bold;
+  height: 10vh;
+  width: auto;
+}
