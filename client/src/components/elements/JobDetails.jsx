@@ -13,7 +13,7 @@ export default function JobDetails({ Details, Id, detailsVisible, toggle }) {
 
   return (
     (jobs.data && (
-      <div className="modal">
+      <div className="modal ">
         {jobs.data
           .filter((job) => {
             return displayData === "" ? job : job._id.includes(displayData);
@@ -25,32 +25,46 @@ export default function JobDetails({ Details, Id, detailsVisible, toggle }) {
                   X
                 </button>
               </div>
-              <h1 className="text-3xl text-center text-">Job Details</h1>
-              <div className="modal-details text-xl justify-center self-center">
-                <div className="job-role">
-                  Job Role: {job.refInternshipTitle.name}
-                </div>
-                <div className="company">
-                  Company: {job.refUser.refCompanyProfile.companyName}
-                </div>
-                <div className="location">
-                  Location: {job.refUser.refCompanyProfile.refLocation.city}
-                </div>
-                <div className="modal-skills">
-                  Skills Required:{" "}
-                  {
-                    <ul>
-                      {job.refSkills.map((skill) => (
-                        <li>{skill.name}</li>
-                      ))}
-                    </ul>
-                  }
-                </div>
-                {job.jobOffer.length > 0 && (
-                  <div className="job-offer">
-                    Job Offer: {job.jobOffer[0]} - {job.jobOffer[1]}
+              <h1 className="modal-header text-3xl text-center text">
+                Job Details
+              </h1>
+              <div className="modal-content">
+                <div className="modal-details text-xl justify-center self-center">
+                  <div className="job-role">
+                    Job Role:
+                    <div className="val">{job.refInternshipTitle.name}</div>
                   </div>
-                )}
+                  <div className="company">
+                    Company:{" "}
+                    <div className="val">
+                      {job.refUser.refCompanyProfile.companyName}
+                    </div>
+                  </div>
+                  <div className="location">
+                    Location:{" "}
+                    <div className="val">
+                      {job.refUser.refCompanyProfile.refLocation.city}
+                    </div>
+                  </div>
+                  <div className="modal-skills">
+                    Skills Required:{" "}
+                    {
+                      <ul className="skills">
+                        {job.refSkills.map((skill) => (
+                          <li className="val">{skill.name}</li>
+                        ))}
+                      </ul>
+                    }
+                  </div>
+                  {job.jobOffer.length > 0 && (
+                    <div className="job-offer">
+                      Job Offer:{" "}
+                      <div className="val">
+                        {job.jobOffer[0]} - {job.jobOffer[1]}
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
               <div className="btn-list flex flex-row px-3 py-3 my-3 self-center justify-center ">
                 <a
