@@ -1,3 +1,6 @@
+* {
+  color: #c0bdc1;
+}
 .modal {
   width: 100vw;
   height: 90vh;
@@ -10,9 +13,13 @@
   width: 75%;
   border-radius: 2vh;
   border: 2px solid #c0bdc1;
-  opacity: 95%;
+  opacity: 99%;
 }
 
 .modal-header {
+  color: #c0bdc1;
+}
+
+.modal-skills {
   color: #c0bdc1;
 }
