@@ -37,7 +37,7 @@ export const Navbar = () => {
   return (
     <div className={theme ? "dark" : ""}>
       <div
-        className="navbar flex flex-row justify-between items-center bg-[#F6F6F9] text-black dark:text-[#c0bdc1] dark:bg-[#202528] p-2"
+        className="navbar flex flex-row justify-between items-center bg-[#FFFFFF] text-black dark:text-[#c0bdc1] dark:bg-[#202528] p-2"
         role="navigation"
       >
         <div className="brand">
@@ -50,23 +50,35 @@ export const Navbar = () => {
         </div>
         <div className=" text-black dark:text-[#fafafc]">
           <ul className="nav">
-            <li className={splitLocation[1] === "" ? "active" : ""}>
-              <Link to={`/`} className="navmenu">
+            <li className={splitLocation[1] === "" ? "active" : " "}>
+              <Link
+                to={`/`}
+                className="text-black hover:text-[#a30cfd] dark:text-[#fafafc] dark:hover:text-[#a30cfd]"
+              >
                 Home
               </Link>
             </li>
             <li className={splitLocation[1] === "Jobs" ? "active" : ""}>
-              <Link to={"/Jobs"} className="navmenu">
+              <Link
+                to={"/Jobs"}
+                className="text-black hover:text-[#a30cfd] dark:text-[#fafafc] dark:hover:text-[#a30cfd]"
+              >
                 Jobs
               </Link>
             </li>
             <li className={splitLocation[1] === "Telegram" ? "active" : ""}>
-              <Link to={`/Telegram`} className="navmenu">
+              <Link
+                to={`/Telegram`}
+                className="text-black hover:text-[#a30cfd] dark:text-[#fafafc] dark:hover:text-[#a30cfd]"
+              >
                 Telegram
               </Link>
             </li>
             <li className={splitLocation[1] === "About" ? "active" : ""}>
-              <Link to={`/About`} className="navmenu">
+              <Link
+                to={`/About`}
+                className="text-black hover:text-[#a30cfd] dark:text-[#fafafc] dark:hover:text-[#a30cfd]"
+              >
                 About Us
               </Link>
             </li>
