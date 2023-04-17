@@ -1,5 +1,6 @@
 .navbar {
-  border-bottom: 0.1em solid #939194;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
@@ -27,8 +28,7 @@
 }
 
 .nav > li:hover {
-  color: #a30cfd;
-  border-bottom: 0.1em solid #939194;
+  border-bottom: 0.1em solid #7d8da1;
   transform: scale(1.1, 1.1);
 }
 
@@ -63,7 +63,6 @@
   position: absolute;
   right: 0;
   top: calc(100% + 0.5em);
-  background-color: #202528;
   padding: 0.75em;
   border-radius: 2vh;
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);

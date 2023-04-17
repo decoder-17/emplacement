@@ -1,3 +1,30 @@
 .about {
   min-height: 83.5vh;
 }
+.useful,
+.useless {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.people {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2em;
+  border: 2px solid #c0bdc1;
+  padding: 1em;
+  margin: 1em;
+}
+
+.avatar {
+  height: 20em;
+  border-radius: 2vh;
+}
+
+.name {
+  font-weight: bolder;
+  padding: 0.5em;
+}

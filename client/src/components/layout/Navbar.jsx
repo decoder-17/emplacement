@@ -36,84 +36,104 @@ export const Navbar = () => {
 
   return (
     <div className={theme ? "dark" : ""}>
-      <div className="navbar flex flex-row justify-between items-center  text-black dark:text-[#c0bdc1] p-2">
+      <div
+        className="navbar flex flex-row justify-between items-center bg-[#FFFFFF] text-black dark:text-[#c0bdc1] dark:bg-[#202528] p-2"
+        role="navigation"
+      >
         <div className="brand">
           <div className="flex flex-row justify-center items-center">
             <img src={logo} alt="logo" className="logo" />
-            <div className="dark:text-[#c0bdc1]">
+            <div className="text-black dark:text-[#c0bdc1]">
               <Link to={`/`}>emplacement</Link>
             </div>
           </div>
         </div>
-        <div className=" text-[#fafafc]">
+        <div className=" text-black dark:text-[#fafafc]">
           <ul className="nav">
-            <li className={splitLocation[1] === "" ? "active" : ""}>
-              <Link to={`/`} className="navmenu">
+            <li className={splitLocation[1] === "" ? "active" : " "}>
+              <Link
+                to={`/`}
+                className="text-black hover:text-[#a30cfd] dark:text-[#fafafc] dark:hover:text-[#a30cfd]"
+              >
                 Home
               </Link>
             </li>
             <li className={splitLocation[1] === "Jobs" ? "active" : ""}>
-              <Link to={"/Jobs"} className="navmenu">
+              <Link
+                to={"/Jobs"}
+                className="text-black hover:text-[#a30cfd] dark:text-[#fafafc] dark:hover:text-[#a30cfd]"
+              >
                 Jobs
               </Link>
             </li>
             <li className={splitLocation[1] === "Telegram" ? "active" : ""}>
-              <Link to={`/Telegram`} className="navmenu">
+              <Link
+                to={`/Telegram`}
+                className="text-black hover:text-[#a30cfd] dark:text-[#fafafc] dark:hover:text-[#a30cfd]"
+              >
                 Telegram
               </Link>
             </li>
             <li className={splitLocation[1] === "About" ? "active" : ""}>
-              <Link to={`/About`} className="navmenu">
+              <Link
+                to={`/About`}
+                className="text-black hover:text-[#a30cfd] dark:text-[#fafafc] dark:hover:text-[#a30cfd]"
+              >
                 About Us
               </Link>
             </li>
           </ul>
         </div>
-        <div className="changemode">
-          {" "}
-          <img
-            src={theme ? darktheme : lighttheme}
-            alt="dark-theme"
-            className="h-10 w-auto"
-            onClick={() => {
-              toggleTheme();
-            }}
-          ></img>{" "}
-        </div>
-        <div className="signin">
-          {user ? (
+        <div className="right flex flex-row justify-center">
+          <div className="changemode">
+            {" "}
             <img
-              src={user?.photoURL}
-              width="30"
-              height="30"
-              className="full-rounded"
+              src={theme ? darktheme : lighttheme}
+              alt="dark-theme"
+              className="h-8 w-auto"
               onClick={() => {
-                setloginVisible((curr) => (curr === false ? true : false));
+                toggleTheme();
               }}
-            />
-          ) : (
-            <RxAvatar
-              size={32}
-              onClick={() => {
-                setloginVisible((curr) => (curr === false ? true : false));
-              }}
-            />
-          )}
+            ></img>{" "}
+          </div>
+          <div className="signin">
+            {user ? (
+              <img
+                src={user?.photoURL}
+                width="30"
+                height="30"
+                className="full-rounded"
+                onClick={() => {
+                  setloginVisible((curr) => (curr === false ? true : false));
+                }}
+              />
+            ) : (
+              <RxAvatar
+                size={32}
+                className="text-black dark:text-[#c0bdc1]"
+                onClick={() => {
+                  setloginVisible((curr) => (curr === false ? true : false));
+                }}
+              />
+            )}
 
-          {loginVisible && (
-            <div className={loginVisible ? "signin-menu show" : "signin-menu"}>
-              <div className="user-details">
-                <div className="user-email">{user?.email}</div>
-                <div className="user-name">{user?.displayName}</div>
-              </div>
-              <button
-                className="text-[#c0bdc1] rounded-full button flex py-2 mx-2 w-32 text-center justify-center hover:text-[#fafafc]"
-                onClick={user ? signUserOut : signIn}
+            {loginVisible && (
+              <div
+                className={loginVisible ? "signin-menu show" : "signin-menu"}
               >
-                {status}
-              </button>
-            </div>
-          )}
+                <div className="user-details">
+                  <div className="user-email">{user?.email}</div>
+                  <div className="user-name">{user?.displayName}</div>
+                </div>
+                <button
+                  className="text-[#7d8da1] dark:text-[#c0bdc1] rounded-full button flex py-2 mx-2 w-32 text-center justify-center hover:text-[#fafafc]"
+                  onClick={user ? signUserOut : signIn}
+                >
+                  {status}
+                </button>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>
