@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600&family=Krona+One&display=swap");
 
 .body {
-  min-height: 75vh;
+  min-height: 88vh;
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* padding: 1em; */
 }
 
 .brand {
