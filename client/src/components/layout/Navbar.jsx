@@ -85,7 +85,7 @@ export const Navbar = () => {
           </ul>
         </div>
         <div className="right flex flex-row justify-center">
-          <div className="changemode">
+          <div className="changemode p-2">
             {" "}
             <img
               src={theme ? darktheme : lighttheme}
@@ -96,7 +96,7 @@ export const Navbar = () => {
               }}
             ></img>{" "}
           </div>
-          <div className="signin">
+          <div className="signin p-2">
             {user ? (
               <img
                 src={user?.photoURL}

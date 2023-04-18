@@ -6,14 +6,14 @@ export default function About() {
   const { theme } = useContext(ThemeContext);
   return (
     <div className={theme ? "dark" : ""}>
-      <div className="hero bg-[#F6F6F9] dark:bg-[#181A1E] p-6">
+      <div className=" bg-[#F6F6F9] dark:bg-[#181A1E]">
         <div className="about">
-          <div className="heading text sm:flex-1 my-2 py-2">
+          <div className="heading text sm:flex-1 p-2">
             The ones' who made it possible.
           </div>
           <h1 className="content">Who actually worked</h1>
           <div className="useful">
-            <div className="people">
+            <div className="people bg-[#F6F6F9] dark:bg-[#202528]">
               <div className="image">
                 {" "}
                 <img
@@ -25,7 +25,7 @@ export default function About() {
               <div className="name">Neeraj Chopra</div>
               <div className="designation">Only Backend & Co.</div>
             </div>
-            <div className="people">
+            <div className="people bg-[#F6F6F9] dark:bg-[#202528]">
               <div className="image">
                 {" "}
                 <img

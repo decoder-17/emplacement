@@ -9,23 +9,24 @@ export const Hero = () => {
   return (
     <div className={theme ? "dark" : ""}>
       <div className="hero bg-[#F6F6F9] dark:bg-[#181A1E] p-6">
-        <div className="body flex flex-col sm:flex-row rounded-3xl">
-          <div className="overlay sm:flex-1 ">
-            <div className=" p-2 text-5xl text-[#a30cfd] tagline">
+        <div className="body flex flex-col sm:flex-row rounded-3xl bg-[#FFFFFF] dark:bg-[#202528] shadow-lg shadow-[rgba(132, 139, 200, 0.18)]-500/40">
+          <div className="overlay sm:flex-1 justify-center self-center">
+            <div className="p-6 m-6 text-6xl text-[#a30cfd] tagline">
               Discover New Opportunities
             </div>
-            {/* <div className="details px-3 py-3 text-[#fcfcfc] ">
-          <p className="py-3">
-            Emplacement is the ultimate job search platform that helps you find
-            the perfect job that matches your skills, experience, and
-            preferences.
-          </p>
+            <div className="details p-6 m-6 text-[#fcfcfc] ">
+              <p className="py-3">
+                Emplacement is the ultimate job search platform that helps you
+                find the perfect job that matches your skills, experience, and
+                preferences.
+              </p>
 
-          <p className="py-3">
-            So why wait? <span class="brand">Sign Up</span> for Emplacement
-            today and start your job search journey towards your dream career.
-          </p>
-        </div> */}
+              <p className="py-3">
+                So why wait? <span class="brand">Sign Up</span> for Emplacement
+                today and start your job search journey towards your dream
+                career.
+              </p>
+            </div>
             <div className="buttonlist flex flex-row  p-3 m-3 self-center justify-center align-bottom">
               <Link
                 to="./Jobs"
@@ -41,13 +42,13 @@ export const Hero = () => {
               </Link>
             </div>
           </div>
-          {/* <div className="flex sm:flex-1 px-6 py-6 self-center">
-        <img
-          src={heroimg}
-          alt="heroimg"
-          className=" px-6 py-6 flex-1 min-w-screen self-center min-h-max"
-        />
-      </div> */}
+          <div className="flex sm:flex-1 px-6 py-6 self-center">
+            <img
+              src={heroimg}
+              alt="heroimg"
+              className=" px-6 py-6 flex-1 min-w-screen self-center min-h-max"
+            />
+          </div>
         </div>
       </div>
     </div>

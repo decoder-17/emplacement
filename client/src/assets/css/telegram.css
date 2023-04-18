@@ -1,5 +1,5 @@
 .telegram {
-  min-height: 83.5vh;
+  min-height: 78.4vh;
 }
 .heading {
   display: flex;
@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5vh;
+  padding: 1.5em;
 }
 
 .notificationimg {

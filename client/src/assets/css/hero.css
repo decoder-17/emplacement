@@ -1,21 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600&family=Krona+One&display=swap");
 
-.hero{
-  
-}
-
 .body {
-  min-height: 88vh;
-  max-height: 88vh;
-  background-image: url(../images/hero.jpg);
-  background-size: cover;
+  min-height: 78.4vh;
+  max-height: 78.4vh;
+  /* background-image: url(../images/hero.jpg); */
 }
 
 .overlay {
-  position: relative;
-  border-radius: 2vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+  padding: 2em;
 }
 
 .brand {
@@ -25,12 +17,12 @@
 
 .tagline {
   font-family: "Krona One", sans-serif;
-  position: absolute;
+  /* position: absolute;
   top: 30%;
   left: 50%;
   color: white;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
 }
 
 .details {
@@ -76,4 +68,16 @@
   font-weight: bold;
   height: 10vh;
   width: auto;
+}
+
+.features {
+  min-height: 87vh;
+  max-height: 87vh;
+  background-color: #202528;
+}
+
+.pages {
+  min-height: 87vh;
+  max-height: 87vh;
+  background-color: #202528;
 }

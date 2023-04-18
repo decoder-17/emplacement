@@ -10,7 +10,6 @@
   z-index: 2;
   width: 25%;
   border-radius: 2vh;
-  border: 2px solid #c0bdc1;
 }
 
 .close {
@@ -22,18 +21,12 @@
 .closebtn {
   background: none;
   border: none;
-  color: #fff;
   font-size: small;
 }
 
 .closebtn:hover {
   cursor: pointer;
   color: #dc3545;
-}
-
-.pophead,
-.popbody {
-  color: #fff;
 }
 
 .pophead {
