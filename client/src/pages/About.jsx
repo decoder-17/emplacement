@@ -6,7 +6,7 @@ export default function About() {
   const { theme } = useContext(ThemeContext);
   return (
     <div className={theme ? "dark" : ""}>
-      <div className="hero bg-[#F6F6F9] dark:bg-[#181A1E] p-6">
+      <div className=" bg-[#F6F6F9] dark:bg-[#181A1E]">
         <div className="about">
           <div className="heading text sm:flex-1 my-2 py-2">
             The ones' who made it possible.
