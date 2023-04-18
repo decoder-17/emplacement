@@ -1,11 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600&family=Krona+One&display=swap");
 
-.hero {
-}
-
 .body {
-  min-height: 87vh;
-  max-height: 87vh;
+  min-height: 78.4vh;
+  max-height: 78.4vh;
   /* background-image: url(../images/hero.jpg); */
 }
 
