@@ -37,7 +37,7 @@ export const Navbar = () => {
   return (
     <div className={theme ? "dark" : ""}>
       <div
-        className="navbar flex flex-row justify-between items-center bg-[#FFFFFF] text-black dark:text-[#c0bdc1] dark:bg-[#202528] p-2"
+        className="flex flex-row justify-between items-center bg-[#FFFFFF] text-black dark:text-[#c0bdc1] dark:bg-[#202528] p-2 sticky top-0"
         role="navigation"
       >
         <div className="brand">
@@ -129,7 +129,7 @@ export const Navbar = () => {
                   className="text-[#7d8da1] dark:text-[#c0bdc1] rounded-full button flex py-2 mx-2 w-32 text-center justify-center hover:text-[#fafafc]"
                   onClick={user ? signUserOut : signIn}
                 >
-                  {status}
+                  {user ? "Sign Out" : "Sign In"}
                 </button>
               </div>
             )}

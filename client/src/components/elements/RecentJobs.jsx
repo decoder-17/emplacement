@@ -56,9 +56,12 @@ export default function RecentJobs() {
               <CardSkeleton />
             ) : (
               jobs.data && (
-                <div className="card bg-[#F6F6F9] dark:bg-[#181A1E]">
+                <div className="card ">
                   {jobs.data.map((job) => (
-                    <div key={job._id} className="job-info">
+                    <div
+                      key={job._id}
+                      className="job-info bg-[#F6F6F9] dark:bg-[#202528]"
+                    >
                       <div className="card-heading">
                         <img
                           src={
