@@ -1,5 +1,6 @@
 .telegram {
   min-height: 78.4vh;
+  max-height: 78.4vh;
 }
 .heading {
   display: flex;

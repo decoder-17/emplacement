@@ -29,3 +29,29 @@
   font-family: "Inter", sans-serif;
   font-family: "Roboto", sans-serif;
 }
+
+.change {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.move-left,
+.move-right {
+  position: absolute;
+  top: 44em;
+}
+
+.move-left {
+  left: 55em;
+}
+
+.move-right {
+  right: 55em;
+}
+
+.lefticon,
+.righticon {
+  margin: 1em;
+}
