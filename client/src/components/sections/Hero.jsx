@@ -14,14 +14,14 @@ export const Hero = () => {
             <div className="p-6 m-6 text-6xl text-[#a30cfd] tagline">
               Discover New Opportunities
             </div>
-            <div className="details p-6 m-6 text-[#fcfcfc] ">
-              <p className="py-3">
+            <div className="details p-6 m-6 ">
+              <p className="py-3 text-black dark:text-white">
                 Emplacement is the ultimate job search platform that helps you
                 find the perfect job that matches your skills, experience, and
                 preferences.
               </p>
 
-              <p className="py-3">
+              <p className="py-3 text-black dark:text-white">
                 So why wait? <span class="brand">Sign Up</span> for Emplacement
                 today and start your job search journey towards your dream
                 career.
