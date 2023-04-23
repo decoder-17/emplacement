@@ -20,8 +20,8 @@ export default function Telegram() {
               className="notificationimg"
             />
           </div>
-          <div className="content">
-            <p>
+          <div className="content ">
+            <p className="text-black dark:text-white">
               Things are easier than before. You can now get all the latest
               updates on your Telegram. Turn on your notifications and stay
               updated.

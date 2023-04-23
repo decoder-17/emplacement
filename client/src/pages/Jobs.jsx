@@ -84,9 +84,9 @@ export default function Jobs() {
           {search && (
             <div className="job-list">
               {jobs.jobDetails && (
-                <div className="card">
+                <div className="card ">
                   {jobs.jobDetails.map((job) => (
-                    <div key={job.jobId} className="job-info">
+                    <div key={job.jobId} className="job-info dark:bg-[#202528]">
                       <div className="card-heading">
                         <img
                           src={job.logoPath || companylogo}

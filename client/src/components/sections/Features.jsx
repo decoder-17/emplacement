@@ -6,8 +6,7 @@ export default function Features() {
   return (
     <div className={theme ? "dark" : ""}>
       <div className="hero bg-[#F6F6F9] dark:bg-[#181A1E] p-6">
-        {" "}
-        <div className="features">
+        <div className="features rounded-3xl bg-[#FFFFFF] dark:bg-[#202528] shadow-lg shadow-[rgba(132, 139, 200, 0.18)]-500/40">
           <div className="heading">Features</div>
           <div className="points">
             <div className="subheading">Easy to Use</div>

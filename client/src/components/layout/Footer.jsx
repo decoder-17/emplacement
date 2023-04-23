@@ -15,12 +15,12 @@ export default function Footer() {
           <div>
             <div className="flex flex-row justify-center items-center">
               <img src={logo} alt="logo" className="logo" />
-              <div className="brandname">
+              <div className="brandname text-black dark:text-white">
                 <Link to={`/`}>emplacement</Link>
               </div>
             </div>
           </div>
-          <div className="">
+          <div className="text-black dark:text-white">
             {" "}
             Developed for a cause.
             {/* <a
@@ -32,7 +32,7 @@ export default function Footer() {
             @coder_17
           </a> */}
           </div>
-          <div className="socials">
+          <div className="socials text-black dark:text-white">
             <a href="" target="_blank">
               <TiSocialLinkedin />
             </a>

@@ -16,7 +16,7 @@ export default function TelegramPopup() {
         <div className="popup bg-[#F6F6F9] dark:bg-[#181A1E]">
           <div className="close">
             <button
-              className="closebtn color-white dark:color-black"
+              className="closebtn text-black dark:text-[#F7F7F7]"
               onClick={() => {
                 setpopup(false);
               }}
@@ -24,10 +24,10 @@ export default function TelegramPopup() {
               X
             </button>
           </div>
-          <div className="pophead color-white dark:color-black">
+          <div className="pophead text-black dark:text-white">
             Welcome to Emplacement
           </div>
-          <div className="popbody color-white dark:color-black">
+          <div className="popbody text-black dark:text-white">
             Add our Telegram Bot and Get updates of Internships, Jobs, and much
             more.
           </div>
