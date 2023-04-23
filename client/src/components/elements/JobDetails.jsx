@@ -13,7 +13,7 @@ export default function JobDetails({ Details, Id, detailsVisible, toggle }) {
 
   return (
     (jobs.data && (
-      <div className="modal ">
+      <div className="modal bg-opacity-100 bg-[#FFFFFF] dark:bg-[#202528] ">
         {jobs.data
           .filter((job) => {
             return displayData === "" ? job : job._id.includes(displayData);
@@ -25,28 +25,30 @@ export default function JobDetails({ Details, Id, detailsVisible, toggle }) {
                   X
                 </button>
               </div>
-              <h1 className="modal-header text-3xl text-center text">
+              <h1 className="modal-header text-3xl text-center text text-black dark:text-white">
                 Job Details
               </h1>
               <div className="modal-content">
                 <div className="modal-details text-xl justify-center self-center">
-                  <div className="job-role">
+                  <div className="job-role text-black dark:text-white">
                     Job Role:
-                    <div className="val">{job.refInternshipTitle.name}</div>
+                    <div className="val text-black dark:text-white">
+                      {job.refInternshipTitle.name}
+                    </div>
                   </div>
-                  <div className="company">
+                  <div className="company text-black dark:text-white">
                     Company:{" "}
-                    <div className="val">
+                    <div className="val text-black dark:text-white">
                       {job.refUser.refCompanyProfile.companyName}
                     </div>
                   </div>
-                  <div className="location">
+                  <div className="location text-black dark:text-white">
                     Location:{" "}
-                    <div className="val">
+                    <div className="val text-black dark:text-white">
                       {job.refUser.refCompanyProfile.refLocation.city}
                     </div>
                   </div>
-                  <div className="modal-skills">
+                  <div className="modal-skills text-black dark:text-white">
                     Skills Required:{" "}
                     {
                       <ul className="skills">
