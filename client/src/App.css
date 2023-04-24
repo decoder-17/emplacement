@@ -55,3 +55,8 @@
 .righticon {
   margin: 1em;
 }
+
+.move-right:hover,
+.move-left:hover {
+  cursor: pointer;
+}
