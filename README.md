@@ -13,3 +13,33 @@ Our advanced search filters allow you to narrow down your job search based on sp
 At Emplacement, we understand that finding the right job can be challenging and time-consuming. That's why we're dedicated to providing a seamless and effective job search experience that saves you time and energy.
 
 So why wait? Sign up for Emplacement today and start your job search journey towards your dream career.
+
+
+## Run Locally
+
+Clone the project using the following command
+
+```bash
+  git clone https://github.com/decoder-17/emplacement.git
+```
+
+Once you have successfully cloned the project, open it with your preferrable code editor ( VSC preferred ), and move to the project directory and make it your current directory and open the project in your code editor
+
+```bash
+  cd emplacement
+  cd client
+```
+
+Install the node modules using the following command
+
+```bash
+  npm install
+```
+
+After the installation of node modules, run the following command to fire up the project in your machine
+
+```bash
+  npm run dev
+```
+
+
