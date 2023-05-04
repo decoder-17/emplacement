@@ -13,10 +13,10 @@ export default function Home() {
   };
   return (
     <div className="Home">
-      <div className="change">
+      <div className="change flex gap-8">
         <div className="move-left">
           <BsArrowLeftCircleFill
-            className="lefticon"
+            className="lefticon mx-4 block -translate-x-8"
             color="white"
             size={40}
             onClick={() => change !== 0 && changeComponent(change - 1)}
@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         <div className="move-right">
           <BsArrowRightCircleFill
-            className="righticon"
+            className="righticon mx-4 block translate-x-8"
             color="white"
             size={40}
             onClick={() => change !== 2 && changeComponent(change + 1)}

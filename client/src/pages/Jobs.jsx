@@ -12,6 +12,8 @@ export default function Jobs() {
   const [jobId, setjobId] = useState("");
   const [recent, setrecent] = useState(true);
   const [search, setsearch] = useState(false);
+  const [isLoading, setisLoading] = useState(false);
+
   const showRecent = () => {
     setrecent(true);
     setsearch(false);
@@ -47,9 +49,12 @@ export default function Jobs() {
   };
 
   useEffect(() => {
-    setTimeout(() => {
+    const interval = setTimeout(() => {
       fetchJobDataOnSearch();
     }, 1000);
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   const passJobId = () => {
@@ -123,7 +128,6 @@ export default function Jobs() {
                       </div>
                     </div>
                   ))}
-                  {console.log(jobs.jobDetails)}
                 </div>
               )}
             </div>

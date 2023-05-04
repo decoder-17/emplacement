@@ -10,6 +10,7 @@
 .navigation {
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2em;
 }
 
 .job-btn {
@@ -79,24 +80,22 @@
 
 .card {
   display: flex;
+  gap: 4vh;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border-radius: 2vh;
 }
 
 .job-info {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
+  gap: 1.5vh;
+  border-radius: 0.5vh;
   color: #fff;
-  padding: 2vh;
-  margin: 2vh;
-  border-radius: 2vh;
-  height: 36vh;
-  width: 36vh;
+  padding: 1em 1em;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.4);
   transition: all 300ms ease;
 }
@@ -109,7 +108,6 @@
 .card-heading {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   margin: 1em;
 }

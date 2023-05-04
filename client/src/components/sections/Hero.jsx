@@ -22,9 +22,9 @@ export const Hero = () => {
               </p>
 
               <p className="py-3 text-black dark:text-white">
-                So why wait? <span class="brand">Sign Up</span> for Emplacement
-                today and start your job search journey towards your dream
-                career.
+                So why wait? <span className="brand">Sign In</span> for
+                Emplacement today and start your job search journey towards your
+                dream career.
               </p>
             </div>
             <div className="buttonlist flex flex-row  p-3 m-3 self-center justify-center align-bottom">
@@ -34,12 +34,13 @@ export const Hero = () => {
               >
                 Get Placed
               </Link>
-              <Link
-                to="./About"
+              <a
+                target="_blank"
+                href="https://cuvette.tech/app/student/"
                 className="text-[#000] flex py-2 mx-3 w-40 rounded-full text-center justify-center more"
               >
                 Learn more
-              </Link>
+              </a>
             </div>
           </div>
           <div className="flex sm:flex-1 px-6 py-6 self-center">

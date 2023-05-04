@@ -19,6 +19,7 @@ export default function RecentJobs() {
     "https://backend-decoder-17.cloud.okteto.net/api/v1/site/cuvette/internships?";
 
   const fetchJobDataOnLoad = async () => {
+    setIsLoading(true);
     setError([]);
     try {
       await fetch(url)
@@ -39,9 +40,13 @@ export default function RecentJobs() {
   };
 
   useEffect(() => {
-    setTimeout(() => {
+    const interval = setTimeout(() => {
       fetchJobDataOnLoad();
     }, 1000);
+
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   const passJobId = () => {
@@ -53,7 +58,13 @@ export default function RecentJobs() {
         <div className="job-list">
           <SkeletonTheme highlightColor="#c0bdc1">
             {isLoading ? (
-              <CardSkeleton />
+              // <CardSkeleton />
+              <>
+                <div
+                  aria-hidden={true}
+                  className="h-20 w-20 mt-48 animate-spin rounded-full border-[8px] border-purple-600 border-r-white"
+                ></div>
+              </>
             ) : (
               jobs.data && (
                 <div className="card ">
@@ -67,7 +78,7 @@ export default function RecentJobs() {
                           src={
                             job.refUser.refCompanyProfile.logoUrl || companylogo
                           }
-                          className="logo companylogo mx-2 my-2 rounded-full"
+                          className="logo companylogo  rounded-full"
                           alt="Company Logo"
                         />
                         <div className="header">
@@ -81,10 +92,12 @@ export default function RecentJobs() {
                         </div>
                       </div>
                       <div className="companydetails">
-                        <p className="companylocation info">
-                          Location :{" "}
-                          {job.refUser.refCompanyProfile.refLocation.state}
-                        </p>
+                        {job.refUser.refCompanyProfile.refLocation?.state && (
+                          <p className="companylocation info">
+                            Location :{" "}
+                            {job.refUser.refCompanyProfile.refLocation.state}
+                          </p>
+                        )}
                         <p className="info">Mode : {`${job.internshipMode}`}</p>
                         <p className="timeperiod info">
                           Time period : {job.duration} Months

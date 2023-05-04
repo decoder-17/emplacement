@@ -12,8 +12,8 @@ export default function TelegramPopup() {
 
   return (
     <div className={theme ? "dark" : ""}>
-      <div className=" ">
-        <div className="popup bg-[#F6F6F9] dark:bg-[#181A1E]">
+      <div className="">
+        <div className="popup shadow-xl shadow-white/5 bg-[#F6F6F9] space-y-4 pb-2 px-4 dark:bg-[#181A1E]">
           <div className="close">
             <button
               className="closebtn text-black dark:text-[#F7F7F7]"
@@ -31,7 +31,7 @@ export default function TelegramPopup() {
             Add our Telegram Bot and Get updates of Internships, Jobs, and much
             more.
           </div>
-          <div className="buttonarea">
+          <div className="buttonarea mb-2">
             <a
               href="https://t.me/ts_ryuk_bot"
               target="_blank"
