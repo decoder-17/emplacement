@@ -56,7 +56,6 @@ export default function Jobs() {
       clearInterval(interval);
     };
   }, []);
-  console.log(jobs.jobDetails);
 
   const passJobId = () => {
     setdetailsVisible(true);

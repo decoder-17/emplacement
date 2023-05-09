@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "../../assets/css/jobdetails.css";
 export default function JobDetails({ Details, Id, detailsVisible, toggle }) {
   const jobs = Details;
-  console.log(jobs);
   const [displayData, setdisplayData] = useState("");
   useEffect(() => {
     setdisplayData(Id);
@@ -131,12 +130,21 @@ export default function JobDetails({ Details, Id, detailsVisible, toggle }) {
                       {job.title}
                     </div>
                   </div>
+                  {
+                    <div className="location font-bold text-black dark:text-white">
+                      Job Description:{" "}
+                      <div className="val max-w-5xl text-black font-thin dark:text-white">
+                        {job.jobDescription}
+                      </div>
+                    </div>
+                  }
                   <div className="company font-bold flex gap-4 text-black dark:text-white">
                     Company:{" "}
                     <div className="val text-black font-thin dark:text-white">
                       {job.companyName}
                     </div>
                   </div>
+
                   {
                     <div className="location font-bold flex gap-4 text-black dark:text-white">
                       Location:{" "}
@@ -163,9 +171,13 @@ export default function JobDetails({ Details, Id, detailsVisible, toggle }) {
                     {
                       <ul className="skills mt-4 flex gap-4 flex-wrap">
                         {
-                          <li className="val text-lg border border-black dark:border-white px-2 py-0.5 rounded-md font-thin text-black dark:text-white">
-                            {job.tagsAndSkills}
-                          </li>
+                          <>
+                            {job.tagsAndSkills.split(",").map((skill) => (
+                              <li className="val text-lg border border-black dark:border-white px-2 py-0.5 rounded-md font-thin text-black dark:text-white">
+                                {skill}
+                              </li>
+                            ))}
+                          </>
                         }
                       </ul>
                     }
