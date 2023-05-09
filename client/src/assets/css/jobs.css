@@ -79,7 +79,8 @@
 }
 
 .card {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 4vh;
   flex-direction: row;
   flex-wrap: wrap;
@@ -89,7 +90,7 @@
 
 .job-info {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 1.5vh;

@@ -104,8 +104,12 @@ export default function Jobs() {
                         </div>
                       </div>
                       <div className="companydetails">
-                        <p className="companylocation info">Location :</p>
-                        <p className="timeperiod info">Time period : Months</p>
+                        <p className="companylocation info">
+                          Location : {job.placeholders[2].label}
+                        </p>
+                        <p className="timeperiod info">
+                          Salary : {job.placeholders[1].label}
+                        </p>
                         <p className="stipend info"> </p>
                       </div>
                       <div className="btnlist flex flex-row px-3 py-3 my-3 self-center ">
