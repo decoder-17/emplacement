@@ -74,14 +74,14 @@ export const Navbar = () => {
                 Telegram
               </Link>
             </li>
-            {/* <li className={splitLocation[1] === "About" ? "active" : ""}>
+            <li className={splitLocation[1] === "About" ? "active" : ""}>
               <Link
                 to={`/About`}
                 className="text-black hover:text-[#a30cfd] dark:text-[#fafafc] dark:hover:text-[#a30cfd]"
               >
                 About Us
               </Link>
-            </li> */}
+            </li>
           </ul>
         </div>
         <div className="right flex gap-4 items-center flex-row justify-center">

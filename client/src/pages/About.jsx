@@ -12,8 +12,10 @@ export default function About() {
             The ones' who made it possible.
           </div>
           <h1 className="content text-black dark:text-white">
-            Who actually worked
+            "We can not solve our problems with the same level of thinking that
+            created them."
           </h1>
+
           <div className="useful bg-[#F6F6F9] dark:bg-[#181A1E]">
             <div className="people bg-[#FFFFFF] dark:bg-[#202528] shadow-lg shadow-[rgba(132, 139, 200, 0.18)]-500/40">
               <div className="image">
@@ -25,10 +27,10 @@ export default function About() {
                 />{" "}
               </div>
               <div className="name text-black dark:text-white">
-                Neeraj Chopra
+                Neeraj Kumar
               </div>
               <div className="designation text-black dark:text-white">
-                Only Backend & Co.
+                Backend Developer
               </div>
             </div>
             <div className="people bg-[#FFFFFF] dark:bg-[#202528] shadow-lg shadow-[rgba(132, 139, 200, 0.18)]-500/40">
@@ -44,7 +46,7 @@ export default function About() {
                 Tanupam Saha
               </div>
               <div className="designation text-black dark:text-white">
-                Enjoys depression
+                Frontend Developer
               </div>
             </div>
           </div>
